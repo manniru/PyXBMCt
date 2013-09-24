@@ -111,8 +111,6 @@ Inheritance diagram for addonwindow.AddonDialogWindow:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a675ba648718fadaf18ce155a421070fb"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1_addon_dialog_window.html#a675ba648718fadaf18ce155a421070fb">__new__</a></td></tr>
-<tr class="separator:a675ba648718fadaf18ce155a421070fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4452db0aa1fdbf0a7baa8f1cff3e6de"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1_addon_dialog_window.html#ad4452db0aa1fdbf0a7baa8f1cff3e6de">__init__</a></td></tr>
 <tr class="separator:ad4452db0aa1fdbf0a7baa8f1cff3e6de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17baaa998bc05a6921e8cfa2580d4a8c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1_addon_dialog_window.html#a17baaa998bc05a6921e8cfa2580d4a8c">onAction</a></td></tr>
@@ -263,7 +261,8 @@ including video an music visualization!
 Minimal example:
 
 class MyAddon(AddonDialogWindow):
-    def __init__(self, title='')
+
+    def __init__(self, title=''):
         super(MyAddon, self).__init__(title)
         self.setGeometry(400, 300)
         self.setGrid(4, 3)
@@ -329,44 +328,6 @@ del addon
 <span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a675ba648718fadaf18ce155a421070fb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def addonwindow.AddonDialogWindow.__new__ </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>cls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>title</em> = <code>''</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>args</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>kwargs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 
 </div>
@@ -2489,7 +2450,7 @@ Note:
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 25 2013 01:04:34 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 25 2013 02:16:22 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

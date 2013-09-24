@@ -229,11 +229,12 @@ Public Attributes</h2></td></tr>
 This is a blank window with a black background and without any elements whatsoever.
 The decoration and layout are completely up to an addon developer.
 The window controls can hide under video or music visualization.
-
+Window ID can be passed as an argument on class instantiation.
 Minimal example:
 
 class MyAddon(BlankFullWindow):
-    def __init__(self)
+
+    def __init__(self, *args, **kwargs):
         super(MyAddon, self).__init__()
         self.setGeometry(400, 300)
         self.setGrid(4, 3)
@@ -2066,7 +2067,7 @@ Note:
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 25 2013 01:04:34 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 25 2013 02:16:22 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

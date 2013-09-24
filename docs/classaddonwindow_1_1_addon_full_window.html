@@ -172,8 +172,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5c8a03bf7b4ad39acce7a165c4f6e284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96bde2709c7558866d45c180ac671130"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_window.html#a96bde2709c7558866d45c180ac671130">clearProperties</a></td></tr>
 <tr class="separator:a96bde2709c7558866d45c180ac671130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97370e723c771ed3a0336b09b61e08dc"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___addon_window.html#a97370e723c771ed3a0336b09b61e08dc">setFrame</a></td></tr>
-<tr class="separator:a97370e723c771ed3a0336b09b61e08dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa67111a6bddb166f9434dcba93e6c488"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___addon_window.html#aa67111a6bddb166f9434dcba93e6c488">setGeometry</a></td></tr>
 <tr class="separator:aa67111a6bddb166f9434dcba93e6c488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab66ba015e4b3f99674cf3242d13d2114"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___addon_window.html#ab66ba015e4b3f99674cf3242d13d2114">setGrid</a></td></tr>
@@ -267,12 +265,14 @@ Public Attributes</h2></td></tr>
 
 Control window is displayed on top of the main background image - self.main_bg.
 Video and music visualization are displayed unhindered.
-Window ID can be passed as the 2nd positional agrument.
+Window ID can be passed on class instantiation as the 2nd positional agrument.
 Minimal example:
 
 class MyAddon(AddonFullWindow):
-    def __init__(self, title='')
-        super(MyAddon, self).__init__(title)
+
+    def __init__(self, title='', *args, **kwargs):
+
+        super(MyAddon, self).__init__(title):
         self.setGeometry(400, 300)
         self.setGrid(4, 3)
 
@@ -294,7 +294,19 @@ del addon
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>title</em> = <code>''</code>&#160;</td>
+          <td class="paramname"><em>title</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>kwargs</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -361,13 +373,7 @@ del addon
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>args</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>kwargs</em>&#160;</td>
+          <td class="paramname"><em>windowID</em> = <code>-1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1792,15 +1798,12 @@ Raises:
 </pre> 
 </div>
 </div>
-<a class="anchor" id="a97370e723c771ed3a0336b09b61e08dc"></a>
+<a class="anchor" id="aed0736953768cc2ad382f759cca0fb75"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">def addonwindow._AddonWindow.setFrame </td>
+          <td class="memname">def addonwindow.AddonFullWindow.setFrame </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em>, </td>
@@ -1815,29 +1818,6 @@ Raises:
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<pre class="fragment">Define paths to images for window background and title background textures,
-and set control position adjustment constants used in setGrid.
-</pre> 
-</div>
-</div>
-<a class="anchor" id="aed0736953768cc2ad382f759cca0fb75"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def addonwindow.AddonFullWindow.setFrame </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em></td><td>)</td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2570,7 +2550,7 @@ Note:
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 25 2013 01:04:34 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 25 2013 02:16:22 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
