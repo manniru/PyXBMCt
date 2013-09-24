@@ -39,7 +39,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Packages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -70,18 +72,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="functions.html"><span>All</span></a></li>
       <li class="current"><a href="functions_func.html"><span>Functions</span></a></li>
+      <li><a href="functions_vars.html"><span>Variables</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
       <li><a href="#index__"><span>_</span></a></li>
+      <li><a href="#index_a"><span>a</span></a></li>
+      <li><a href="#index_b"><span>b</span></a></li>
       <li><a href="#index_c"><span>c</span></a></li>
       <li><a href="#index_d"><span>d</span></a></li>
       <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_g"><span>g</span></a></li>
+      <li><a href="#index_i"><span>i</span></a></li>
+      <li><a href="#index_n"><span>n</span></a></li>
       <li><a href="#index_o"><span>o</span></a></li>
       <li><a href="#index_p"><span>p</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_u"><span>u</span></a></li>
+      <li><a href="#index_y"><span>y</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -90,7 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,117 +114,508 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index__"></a>- _ -</h3><ul>
 <li>__init__()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_abstract_window.html#ae80d3ecec8c14365098677fea06ab85a">pyxbmct.addonwindow.AbstractWindow</a>
-, <a class="el" href="classpyxbmct_1_1addonwindow_1_1_addon_window.html#a873d49352cb737ef15161331aaa6589e">pyxbmct.addonwindow.AddonWindow</a>
+: <a class="el" href="classaddonwindow_1_1___abstract_window.html#ab4a1459dae366bd2287584e4ceddf29d">addonwindow._AbstractWindow</a>
+, <a class="el" href="classaddonwindow_1_1___addon_window.html#a03bd9c4fcdc7912c6ed0ba995cb5f49d">addonwindow._AddonWindow</a>
+, <a class="el" href="classaddonwindow_1_1_addon_dialog_window.html#ad4452db0aa1fdbf0a7baa8f1cff3e6de">addonwindow.AddonDialogWindow</a>
+, <a class="el" href="classxbmcgui_1_1_control_progress.html#aa6ea72784b970a9ac522d53a2da55fc9">xbmcgui.ControlProgress</a>
+, <a class="el" href="classaddonwindow_1_1_addon_full_window.html#a06bea1051391f62b61f7e6194623567c">addonwindow.AddonFullWindow</a>
+</li>
+<li>__new__()
+: <a class="el" href="classxbmcgui_1_1_control_image.html#a3398369598fef33c5c7267595a1d2e75">xbmcgui.ControlImage</a>
+, <a class="el" href="classxbmcgui_1_1_control_list.html#a73876d9451a6e62841c753520948d076">xbmcgui.ControlList</a>
+, <a class="el" href="classxbmcgui_1_1_control_check_mark.html#a393116b89527ab9ec08a5994231b4685">xbmcgui.ControlCheckMark</a>
+, <a class="el" href="classxbmcgui_1_1_control_button.html#a778f4aeb0b6854837b2faac6f133146f">xbmcgui.ControlButton</a>
+, <a class="el" href="classxbmcgui_1_1_control_text_box.html#accb839098ac85c28d24761df8b8d7939">xbmcgui.ControlTextBox</a>
+, <a class="el" href="classxbmcgui_1_1_control_fade_label.html#ad2823d2b16a0f2638eb4829aabe02d48">xbmcgui.ControlFadeLabel</a>
+, <a class="el" href="classxbmcgui_1_1_control_label.html#a5ec55582c06e1f3dc91eb6170f2000ff">xbmcgui.ControlLabel</a>
+, <a class="el" href="classxbmcgui_1_1_list_item.html#acade3c6e134e93a6460a3fd73a687180">xbmcgui.ListItem</a>
+, <a class="el" href="classxbmcgui_1_1_window_x_m_l_dialog.html#aae74116e95e1901d96f557c31f47e183">xbmcgui.WindowXMLDialog</a>
+, <a class="el" href="classxbmcgui_1_1_window_x_m_l.html#a3b7d7116fb7f170a8da49acef78a2dc6">xbmcgui.WindowXML</a>
+, <a class="el" href="classxbmcgui_1_1_window.html#aa839770d27556d3ddb845b1499c269b5">xbmcgui.Window</a>
+, <a class="el" href="classaddonwindow_1_1_addon_dialog_window.html#a675ba648718fadaf18ce155a421070fb">addonwindow.AddonDialogWindow</a>
+, <a class="el" href="classaddonwindow_1_1_addon_full_window.html#a8ad3547617fcdf40e2e4139dc23973de">addonwindow.AddonFullWindow</a>
+, <a class="el" href="classaddonwindow_1_1_slider.html#a8a2fdc8d8e6496453a8ea3d2c8881d7a">addonwindow.Slider</a>
+, <a class="el" href="classaddonwindow_1_1_list.html#ad799f355791f3dbf31dbef91c8c308de">addonwindow.List</a>
+, <a class="el" href="classaddonwindow_1_1_edit.html#a9ee00a36d24290a0bdda8e694c5313aa">addonwindow.Edit</a>
+, <a class="el" href="classaddonwindow_1_1_radio_button.html#ae5313874f21a3db22c6832fc9e031be2">addonwindow.RadioButton</a>
+, <a class="el" href="classaddonwindow_1_1_button.html#a3a7679abcd78dc5a6053d8312e2fec48">addonwindow.Button</a>
+, <a class="el" href="classaddonwindow_1_1_image.html#a7225e4eeb80b9a982864d30ed6842b28">addonwindow.Image</a>
+, <a class="el" href="classaddonwindow_1_1_text_box.html#aa7f6a253c925976adb4202d93929d53b">addonwindow.TextBox</a>
+, <a class="el" href="classaddonwindow_1_1_fade_label.html#ab0938887c5dfa47002bef7d6d64ada3e">addonwindow.FadeLabel</a>
+, <a class="el" href="classaddonwindow_1_1_label.html#a171b7a700883753833770ec9f963a4cd">addonwindow.Label</a>
+, <a class="el" href="classxbmcgui_1_1_control_edit.html#ae86a6054aaf7216cb92382edfb120e2b">xbmcgui.ControlEdit</a>
+, <a class="el" href="classxbmcgui_1_1_control_radio_button.html#adab71726907e93e273ea577d48d78efe">xbmcgui.ControlRadioButton</a>
+, <a class="el" href="classxbmcgui_1_1_control_slider.html#aef6f4ae750a3e37b707409389d87b6a7">xbmcgui.ControlSlider</a>
+, <a class="el" href="classxbmcgui_1_1_control_group.html#a5f52d633c1af2c44fe0d36ee145bdf7f">xbmcgui.ControlGroup</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+<li>addContextMenuItems()
+: <a class="el" href="classxbmcgui_1_1_list_item.html#a1732da6da645a89fa1b9e9c51826e8c1">xbmcgui.ListItem</a>
+</li>
+<li>addControl()
+: <a class="el" href="classxbmcgui_1_1_window.html#a397018638b2e9ec65da211920a1eaa61">xbmcgui.Window</a>
+</li>
+<li>addControls()
+: <a class="el" href="classxbmcgui_1_1_window.html#a3708cd22c73105001c8716424e673fda">xbmcgui.Window</a>
+</li>
+<li>addItem()
+: <a class="el" href="classxbmcgui_1_1_window_x_m_l.html#a28241287a854e799b10e4ed6dc48ce3c">xbmcgui.WindowXML</a>
+, <a class="el" href="classxbmcgui_1_1_control.html#afe4124361b05da8599196bc289441a15">xbmcgui.Control</a>
+, <a class="el" href="classxbmcgui_1_1_control_list.html#a582f00507b3583337642709db5e7ddec">xbmcgui.ControlList</a>
+</li>
+<li>addItems()
+: <a class="el" href="classxbmcgui_1_1_control_list.html#a3ebc6dee3a572051d4224ed384e56054">xbmcgui.ControlList</a>
+, <a class="el" href="classxbmcgui_1_1_control.html#a7e81a64744c2218ac7889abef8838666">xbmcgui.Control</a>
+</li>
+<li>addLabel()
+: <a class="el" href="classxbmcgui_1_1_control_fade_label.html#ace8674fad7ecbd2dd5e333d351cf38f9">xbmcgui.ControlFadeLabel</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>browse()
+: <a class="el" href="classxbmcgui_1_1_dialog.html#a070c154fa487be4dbd246192a671c5c0">xbmcgui.Dialog</a>
+</li>
+<li>browseMultiple()
+: <a class="el" href="classxbmcgui_1_1_dialog.html#a1c31cb8fead6bb60f242cd9d50a2351b">xbmcgui.Dialog</a>
+</li>
+<li>browseSingle()
+: <a class="el" href="classxbmcgui_1_1_dialog.html#ae5d0cd65a8d94345dee8aff6bbac239e">xbmcgui.Dialog</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>canAcceptMessages()
+: <a class="el" href="classxbmcgui_1_1_control.html#a8461bac8e0196ae2d9606e425bccb925">xbmcgui.Control</a>
+</li>
+<li>clearList()
+: <a class="el" href="classxbmcgui_1_1_window_x_m_l.html#a9c3b8b41c42f195ae1589d9fe524adec">xbmcgui.WindowXML</a>
+</li>
+<li>clearProperties()
+: <a class="el" href="classxbmcgui_1_1_window.html#a96bde2709c7558866d45c180ac671130">xbmcgui.Window</a>
+</li>
+<li>clearProperty()
+: <a class="el" href="classxbmcgui_1_1_window.html#a5c8a03bf7b4ad39acce7a165c4f6e284">xbmcgui.Window</a>
+</li>
+<li>close()
+: <a class="el" href="classxbmcgui_1_1_window.html#a2763f79eae47ecc309e346f9e6320423">xbmcgui.Window</a>
+, <a class="el" href="classxbmcgui_1_1_dialog_progress.html#ade8ca5a500be009555757931b8f51285">xbmcgui.DialogProgress</a>
+, <a class="el" href="classxbmcgui_1_1_dialog_progress_b_g.html#a5f7b49eb73572b2e8bd5903b3a933a2a">xbmcgui.DialogProgressBG</a>
+</li>
 <li>connect()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_abstract_window.html#a4df7e4aebfc537a306b9dcb2dc085ad6">pyxbmct.addonwindow.AbstractWindow</a>
+: <a class="el" href="classaddonwindow_1_1___abstract_window.html#a585e189033f5da2ba4dcf352f71a1758">addonwindow._AbstractWindow</a>
 </li>
 <li>connectAction()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_abstract_window.html#a495f7244a0776a4ee18c35edde8b1c24">pyxbmct.addonwindow.AbstractWindow</a>
+: <a class="el" href="classaddonwindow_1_1___abstract_window.html#ad7aa42e14b099d5cab6df14a29f58f43">addonwindow._AbstractWindow</a>
 </li>
 <li>connectControl()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_abstract_window.html#a3b3073aa0b27ce1a8929aee69b6747ba">pyxbmct.addonwindow.AbstractWindow</a>
+: <a class="el" href="classaddonwindow_1_1___abstract_window.html#a55571f6d364d50f04b766ddf8a041a36">addonwindow._AbstractWindow</a>
+</li>
+<li>controlDown()
+: <a class="el" href="classxbmcgui_1_1_control.html#ac1f37783fa10c32cf0e532a6bf0246a4">xbmcgui.Control</a>
+</li>
+<li>controlLeft()
+: <a class="el" href="classxbmcgui_1_1_control.html#ac7f2627d96eb3be2ec3c3329f12db3f7">xbmcgui.Control</a>
+</li>
+<li>controlRight()
+: <a class="el" href="classxbmcgui_1_1_control.html#a4ed3ea0c59f1611a4e6973044fcc3e0b">xbmcgui.Control</a>
+</li>
+<li>controlUp()
+: <a class="el" href="classxbmcgui_1_1_control.html#a748e748e7b4c264613f9181f729fec00">xbmcgui.Control</a>
+</li>
+<li>create()
+: <a class="el" href="classxbmcgui_1_1_dialog_progress.html#ac8597be6acfbcdc662ab6755b1c05f23">xbmcgui.DialogProgress</a>
+, <a class="el" href="classxbmcgui_1_1_dialog_progress_b_g.html#a9b287691fecebef06d40897413b674a1">xbmcgui.DialogProgressBG</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
 <li>disconnect()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_abstract_window.html#a984e995e3063157beb2e82ca417ae5b3">pyxbmct.addonwindow.AbstractWindow</a>
+: <a class="el" href="classaddonwindow_1_1___abstract_window.html#af478c6502de3740aa8470349581876ed">addonwindow._AbstractWindow</a>
 </li>
 <li>disconnectAction()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_abstract_window.html#a565142637abf33d9679fe5524bb73418">pyxbmct.addonwindow.AbstractWindow</a>
+: <a class="el" href="classaddonwindow_1_1___abstract_window.html#abead809164754efa03da90e643671f58">addonwindow._AbstractWindow</a>
 </li>
 <li>disconnectControl()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_abstract_window.html#aa4be6df05bb4658e202a04cd8f9e3e09">pyxbmct.addonwindow.AbstractWindow</a>
+: <a class="el" href="classaddonwindow_1_1___abstract_window.html#af8fd0f55950b40aad859ca0838b8d0de">addonwindow._AbstractWindow</a>
+</li>
+<li>doModal()
+: <a class="el" href="classxbmcgui_1_1_window.html#a4e19af6813130f646e0438fdb9ff6a58">xbmcgui.Window</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
 <li>executeConnected()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_abstract_window.html#a6fb7d88b4212ac0294beef3c282b0b39">pyxbmct.addonwindow.AbstractWindow</a>
+: <a class="el" href="classaddonwindow_1_1___abstract_window.html#af7123f7679a457dfe54adbdae408e25b">addonwindow._AbstractWindow</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
+<li>getAmount1()
+: <a class="el" href="classxbmcgui_1_1_action.html#a69204c7a553ae5582e86ad286ce4c162">xbmcgui.Action</a>
+</li>
+<li>getAmount2()
+: <a class="el" href="classxbmcgui_1_1_action.html#abce00a26abcfb2f88aaf486a7ad64170">xbmcgui.Action</a>
+</li>
+<li>getButtonCode()
+: <a class="el" href="classxbmcgui_1_1_action.html#ae5f5117ea5e2393486aefcae28e458d0">xbmcgui.Action</a>
+</li>
 <li>getColumns()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_abstract_window.html#a985e8bf2c5ef235bad1c2ee9de8ea3be">pyxbmct.addonwindow.AbstractWindow</a>
+: <a class="el" href="classaddonwindow_1_1___abstract_window.html#a2132a060cc09a9dae7f03b6c35c069ea">addonwindow._AbstractWindow</a>
+</li>
+<li>getControl()
+: <a class="el" href="classxbmcgui_1_1_window.html#aac869f766eee19394db8ef0bb6b218ee">xbmcgui.Window</a>
+</li>
+<li>getCurrentListPosition()
+: <a class="el" href="classxbmcgui_1_1_window_x_m_l.html#afc35a97c53e096207ff7fd8e9fc685b6">xbmcgui.WindowXML</a>
+</li>
+<li>getFocus()
+: <a class="el" href="classxbmcgui_1_1_window.html#a0eaec2e11aa7868092df2b952daf1b91">xbmcgui.Window</a>
+</li>
+<li>getFocusId()
+: <a class="el" href="classxbmcgui_1_1_window.html#a8bb5a06f8998d0c6ce3813a3929738f3">xbmcgui.Window</a>
+</li>
+<li>getHeight()
+: <a class="el" href="classxbmcgui_1_1_window.html#aaaadff7321e0d6a0be8d9fd3d3bbe4fb">xbmcgui.Window</a>
+, <a class="el" href="classxbmcgui_1_1_control.html#a8af7e2918573e6ddf5bfb7c7e095cbc2">xbmcgui.Control</a>
+</li>
+<li>getId()
+: <a class="el" href="classxbmcgui_1_1_control.html#af6f116a92c100768c2b113812ff1f918">xbmcgui.Control</a>
+, <a class="el" href="classxbmcgui_1_1_action.html#a7c4c6dd05dd4f7676d7bfebed05b5824">xbmcgui.Action</a>
+</li>
+<li>getItemHeight()
+: <a class="el" href="classxbmcgui_1_1_control_list.html#a1761ea319e85eb504e9b87b0fea1d1d5">xbmcgui.ControlList</a>
+</li>
+<li>getLabel()
+: <a class="el" href="classxbmcgui_1_1_control_button.html#ac733a6dd022bcfff403d78bdd7770550">xbmcgui.ControlButton</a>
+, <a class="el" href="classxbmcgui_1_1_list_item.html#ad392bf7b2a2f6fcb3e54d3d0a62bb086">xbmcgui.ListItem</a>
+, <a class="el" href="classxbmcgui_1_1_control_label.html#aea39ee0a42db7542c6998ebce4a2ef9d">xbmcgui.ControlLabel</a>
+</li>
+<li>getLabel2()
+: <a class="el" href="classxbmcgui_1_1_list_item.html#a6aa41722d2b298ac324bb9a7e3496402">xbmcgui.ListItem</a>
+, <a class="el" href="classxbmcgui_1_1_control_button.html#ae77c53956a3c69196b786f9d27fba42e">xbmcgui.ControlButton</a>
+</li>
+<li>getListItem()
+: <a class="el" href="classxbmcgui_1_1_window_x_m_l.html#a65ecab5d23721560b961977f4964acb3">xbmcgui.WindowXML</a>
+, <a class="el" href="classxbmcgui_1_1_control_list.html#ab5bf5b3606cb896fcb817a093adc1ad7">xbmcgui.ControlList</a>
+</li>
+<li>getListSize()
+: <a class="el" href="classxbmcgui_1_1_window_x_m_l.html#a3f81fcf4c7e59f49eab957112036abbb">xbmcgui.WindowXML</a>
+</li>
+<li>getPercent()
+: <a class="el" href="classxbmcgui_1_1_control_progress.html#ae7adff74f70049f738fa4fa772650657">xbmcgui.ControlProgress</a>
+, <a class="el" href="classxbmcgui_1_1_control_slider.html#a33f51e50f8af030013a316c0159293f6">xbmcgui.ControlSlider</a>
+</li>
+<li>getPosition()
+: <a class="el" href="classxbmcgui_1_1_control.html#a278f6403054900e575927c2016a033c0">xbmcgui.Control</a>
+</li>
+<li>getProperty()
+: <a class="el" href="classxbmcgui_1_1_window.html#a5c4bed8cd5fd2d65b7491bbd5e27b40c">xbmcgui.Window</a>
+, <a class="el" href="classxbmcgui_1_1_list_item.html#a893ddcb8a4f6d744311326430d1793ad">xbmcgui.ListItem</a>
+</li>
+<li>getResolution()
+: <a class="el" href="classxbmcgui_1_1_window.html#a21943034f9d3bc4f21725e5349d41b89">xbmcgui.Window</a>
 </li>
 <li>getRows()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_abstract_window.html#a4be600fb99a7959612c121a2842462c5">pyxbmct.addonwindow.AbstractWindow</a>
+: <a class="el" href="classaddonwindow_1_1___abstract_window.html#ae9596d729f1d42161b316bc74142f5ec">addonwindow._AbstractWindow</a>
+</li>
+<li>getSelected()
+: <a class="el" href="classxbmcgui_1_1_control_check_mark.html#ae3a85927b6151738356eae89b6fc2c31">xbmcgui.ControlCheckMark</a>
+</li>
+<li>getSelectedItem()
+: <a class="el" href="classxbmcgui_1_1_control_list.html#a3fc23b98b087ff8c7c66fc9dcb52dd24">xbmcgui.ControlList</a>
+</li>
+<li>getSelectedPosition()
+: <a class="el" href="classxbmcgui_1_1_control_list.html#aec3cc0aace0946f2993ef91f9c3f622c">xbmcgui.ControlList</a>
+</li>
+<li>getSpace()
+: <a class="el" href="classxbmcgui_1_1_control_list.html#ae0541e1bd2342aa1733cdc6b1811f86a">xbmcgui.ControlList</a>
+</li>
+<li>getSpinControl()
+: <a class="el" href="classxbmcgui_1_1_control_list.html#aeffee470bf29fc1f7ed78561799fdc46">xbmcgui.ControlList</a>
+</li>
+<li>getText()
+: <a class="el" href="classxbmcgui_1_1_control_edit.html#a341d8c2236f09a67e6f18177fc913dd8">xbmcgui.ControlEdit</a>
 </li>
 <li>getTitle()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_addon_window.html#a56b19172beb7eb907da2ee91840fd688">pyxbmct.addonwindow.AddonWindow</a>
+: <a class="el" href="classaddonwindow_1_1___addon_window.html#ada4bd535543c83ffce72b21863688d4b">addonwindow._AddonWindow</a>
+</li>
+<li>getWidth()
+: <a class="el" href="classxbmcgui_1_1_window.html#af7ae4a47ee3061f91e800dac85ce358e">xbmcgui.Window</a>
+, <a class="el" href="classxbmcgui_1_1_control.html#a128e168bd85b51b137bf0ff51d2b867a">xbmcgui.Control</a>
 </li>
 <li>getWindowHeight()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_abstract_window.html#a755f73cd28325b7f6b79643956e40697">pyxbmct.addonwindow.AbstractWindow</a>
+: <a class="el" href="classaddonwindow_1_1___abstract_window.html#abb61e20282d7cdbc03b155dd5d60b8d1">addonwindow._AbstractWindow</a>
 </li>
 <li>getWindowWidth()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_abstract_window.html#acc36972f220f53be259baddd5af95f84">pyxbmct.addonwindow.AbstractWindow</a>
+: <a class="el" href="classaddonwindow_1_1___abstract_window.html#a3264444abeb92e96c7354e803def2374">addonwindow._AbstractWindow</a>
 </li>
 <li>getX()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_abstract_window.html#a9877d53fcf24554bbf05c745da81fbd8">pyxbmct.addonwindow.AbstractWindow</a>
+: <a class="el" href="classxbmcgui_1_1_control.html#ab6de3cc36c12c3ccc80645aa4421c1ae">xbmcgui.Control</a>
+, <a class="el" href="classaddonwindow_1_1___abstract_window.html#a88abde869726f1cf4fb858ce79b3a7b7">addonwindow._AbstractWindow</a>
 </li>
 <li>getY()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_abstract_window.html#a775813f074758897960a9557cf05d585">pyxbmct.addonwindow.AbstractWindow</a>
+: <a class="el" href="classaddonwindow_1_1___abstract_window.html#a59a175bec66a07f9efa2d7c7cac31c5d">addonwindow._AbstractWindow</a>
+, <a class="el" href="classxbmcgui_1_1_control.html#ae77a1668041f93ea3d35acd8d68da0ec">xbmcgui.Control</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>input()
+: <a class="el" href="classxbmcgui_1_1_dialog.html#a7a97985e609ca33ce9c9abd9b2640cbf">xbmcgui.Dialog</a>
+</li>
+<li>iscanceled()
+: <a class="el" href="classxbmcgui_1_1_dialog_progress.html#a85726dc6b6a3f06fd49841e47c7e237c">xbmcgui.DialogProgress</a>
+</li>
+<li>isFinished()
+: <a class="el" href="classxbmcgui_1_1_dialog_progress_b_g.html#a8dd0958de67e4fdaad52342e36e2aea9">xbmcgui.DialogProgressBG</a>
+</li>
+<li>isSelected()
+: <a class="el" href="classxbmcgui_1_1_list_item.html#ac62104a6fc9a37ed4c639334e9794f76">xbmcgui.ListItem</a>
+, <a class="el" href="classxbmcgui_1_1_control_radio_button.html#a0ed4bfd23d167ac4f6514f48370a8021">xbmcgui.ControlRadioButton</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>notification()
+: <a class="el" href="classxbmcgui_1_1_dialog.html#aa7b6cd9b73b30f9a56af5ed40710f533">xbmcgui.Dialog</a>
+</li>
+<li>numeric()
+: <a class="el" href="classxbmcgui_1_1_dialog.html#af124af53419c129c44fa674adf63253c">xbmcgui.Dialog</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>ok()
+: <a class="el" href="classxbmcgui_1_1_dialog.html#aecd1080300b9f497854a7781bff43eba">xbmcgui.Dialog</a>
+</li>
 <li>onAction()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_addon_full_window.html#a54fc3b77fc371b39739ec4ce17f4b257">pyxbmct.addonwindow.AddonFullWindow</a>
-, <a class="el" href="classpyxbmct_1_1addonwindow_1_1_addon_dialog_window.html#a66f036bcef7b5999945d16bc9c977f2d">pyxbmct.addonwindow.AddonDialogWindow</a>
-, <a class="el" href="classpyxbmct_1_1addonwindow_1_1_blank_dialog_window.html#ac2ffda281d4bfe5f18be5b73f2a7ce92">pyxbmct.addonwindow.BlankDialogWindow</a>
-, <a class="el" href="classpyxbmct_1_1addonwindow_1_1_blank_full_window.html#a89c636d3543c527caf2d3e260d1eb39c">pyxbmct.addonwindow.BlankFullWindow</a>
+: <a class="el" href="classaddonwindow_1_1_blank_full_window.html#a951f67c8c6ff67e7751a8817af99e3b3">addonwindow.BlankFullWindow</a>
+, <a class="el" href="classaddonwindow_1_1_addon_full_window.html#a647c22a5ae9e6e6525c647c1a696e0a3">addonwindow.AddonFullWindow</a>
+, <a class="el" href="classaddonwindow_1_1_addon_dialog_window.html#a17baaa998bc05a6921e8cfa2580d4a8c">addonwindow.AddonDialogWindow</a>
+, <a class="el" href="classaddonwindow_1_1_blank_dialog_window.html#ade7d3a1a0094e327fb97e76e672bd010">addonwindow.BlankDialogWindow</a>
+, <a class="el" href="classxbmcgui_1_1_window.html#a8f7b46ea188ecee537e687602b151833">xbmcgui.Window</a>
+</li>
+<li>onClick()
+: <a class="el" href="classxbmcgui_1_1_window.html#a477d6e12050b00406fe8d1904e06cb31">xbmcgui.Window</a>
 </li>
 <li>onControl()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_addon_full_window.html#a05a63c0ee95bfee91218e1dd6e70755f">pyxbmct.addonwindow.AddonFullWindow</a>
-, <a class="el" href="classpyxbmct_1_1addonwindow_1_1_blank_dialog_window.html#a06b6aac60e79d70e32a34371dd0bdda0">pyxbmct.addonwindow.BlankDialogWindow</a>
-, <a class="el" href="classpyxbmct_1_1addonwindow_1_1_addon_dialog_window.html#a0259b2489b15e6059dd7f1fa9e847ef8">pyxbmct.addonwindow.AddonDialogWindow</a>
-, <a class="el" href="classpyxbmct_1_1addonwindow_1_1_blank_full_window.html#a001742b359c92c91465ebcef0a5efb88">pyxbmct.addonwindow.BlankFullWindow</a>
+: <a class="el" href="classaddonwindow_1_1_blank_full_window.html#a5fea87a2450d611465b2068dc1284eab">addonwindow.BlankFullWindow</a>
+, <a class="el" href="classaddonwindow_1_1_blank_dialog_window.html#a73890ccd3ec05841938d3771cbe764c5">addonwindow.BlankDialogWindow</a>
+, <a class="el" href="classaddonwindow_1_1_addon_dialog_window.html#a598aeb353df21d2e3db4fda3938ae01e">addonwindow.AddonDialogWindow</a>
+, <a class="el" href="classaddonwindow_1_1_addon_full_window.html#a8309b6080497c3473239fe3fd46b927b">addonwindow.AddonFullWindow</a>
+, <a class="el" href="classxbmcgui_1_1_window.html#a7c02517dc42c666528d3f5ec73352ec3">xbmcgui.Window</a>
+</li>
+<li>onDoubleClick()
+: <a class="el" href="classxbmcgui_1_1_window.html#abb8642f403113ac9aee32460340dd31d">xbmcgui.Window</a>
+</li>
+<li>onFocus()
+: <a class="el" href="classxbmcgui_1_1_window.html#ac7ea9ba13120c6782162b33bbd58be8b">xbmcgui.Window</a>
+</li>
+<li>onInit()
+: <a class="el" href="classxbmcgui_1_1_window.html#ada48210dfa723fbf26065e4ffa7619ab">xbmcgui.Window</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
 <li>placeControl()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_abstract_window.html#a78640a58d395073eb08c1e14885489b9">pyxbmct.addonwindow.AbstractWindow</a>
+: <a class="el" href="classaddonwindow_1_1___abstract_window.html#a16d38ff713a3b2790eb39accdc24cb1b">addonwindow._AbstractWindow</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>removeControl()
+: <a class="el" href="classxbmcgui_1_1_window.html#a3c41c5b7d5ead20a1aca448562e3ceb9">xbmcgui.Window</a>
+</li>
+<li>removeControls()
+: <a class="el" href="classxbmcgui_1_1_window.html#a190570ca2eba054945bf4e1aca723c4b">xbmcgui.Window</a>
+</li>
+<li>removeItem()
+: <a class="el" href="classxbmcgui_1_1_window_x_m_l.html#af038857dfc61c96bc4822cc93eb4eb79">xbmcgui.WindowXML</a>
+</li>
+<li>reset()
+: <a class="el" href="classxbmcgui_1_1_control_fade_label.html#a5a2aac3e5ef3dbccfb01ea6e8f9a1d94">xbmcgui.ControlFadeLabel</a>
+, <a class="el" href="classxbmcgui_1_1_control_text_box.html#aeec2d13f20addbfdf71e6f66422b5bcc">xbmcgui.ControlTextBox</a>
+, <a class="el" href="classxbmcgui_1_1_control_list.html#af5374508d6fb7361a5d08ef736b3ba7a">xbmcgui.ControlList</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>scroll()
+: <a class="el" href="classxbmcgui_1_1_control_text_box.html#a3eb752c9a7823d9aeb0fef0539e52f1e">xbmcgui.ControlTextBox</a>
+</li>
+<li>select()
+: <a class="el" href="classxbmcgui_1_1_list_item.html#af0fece22d980cf4be2642bb88c0b020f">xbmcgui.ListItem</a>
+, <a class="el" href="classxbmcgui_1_1_dialog.html#a89416caaff4742d62d022c76d0b19ec3">xbmcgui.Dialog</a>
+</li>
+<li>selectItem()
+: <a class="el" href="classxbmcgui_1_1_control_list.html#a5d96a8d81d47dc72e9f8edc7a83d1e0d">xbmcgui.ControlList</a>
+</li>
+<li>setAnimations()
+: <a class="el" href="classxbmcgui_1_1_control.html#a8415345c5c3d1ebba330999e92190005">xbmcgui.Control</a>
+</li>
 <li>setBackground()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_addon_full_window.html#a72dd9148f81130d05cf250e6618f58db">pyxbmct.addonwindow.AddonFullWindow</a>
+: <a class="el" href="classaddonwindow_1_1_addon_full_window.html#afeb3a1be8a39028a60280b164bae7331">addonwindow.AddonFullWindow</a>
+</li>
+<li>setColorDiffuse()
+: <a class="el" href="classxbmcgui_1_1_control_image.html#a931d68aeb119b85e185f0b2a30fc8146">xbmcgui.ControlImage</a>
+</li>
+<li>setCoordinateResolution()
+: <a class="el" href="classxbmcgui_1_1_window.html#a8d6301fc61fd0a29c097b7051f0c621f">xbmcgui.Window</a>
+</li>
+<li>setCurrentListPosition()
+: <a class="el" href="classxbmcgui_1_1_window_x_m_l.html#a36384dbff6e13360cef6bdc727647f3c">xbmcgui.WindowXML</a>
+</li>
+<li>setDisabledColor()
+: <a class="el" href="classxbmcgui_1_1_control_button.html#afb847b8b85f4d3baa0928cee6d210d8e">xbmcgui.ControlButton</a>
+, <a class="el" href="classxbmcgui_1_1_control_check_mark.html#ab80c06c028efa26052faf16d0e40eb27">xbmcgui.ControlCheckMark</a>
+</li>
+<li>setEnableCondition()
+: <a class="el" href="classxbmcgui_1_1_control.html#a36c8558e497cf39e0e43f21d92e12dc8">xbmcgui.Control</a>
+</li>
+<li>setEnabled()
+: <a class="el" href="classxbmcgui_1_1_control.html#a18523328174509c062a359485fd6169c">xbmcgui.Control</a>
+</li>
+<li>setFocus()
+: <a class="el" href="classxbmcgui_1_1_window.html#ad62dab1617ffbd924589bab132c8d8fc">xbmcgui.Window</a>
+</li>
+<li>setFocusId()
+: <a class="el" href="classxbmcgui_1_1_window.html#ac984c1a11e04ea616e376be65946a7ef">xbmcgui.Window</a>
 </li>
 <li>setFrame()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_addon_window.html#ac997e395b8f04ad4ee67c0c4b6d5f297">pyxbmct.addonwindow.AddonWindow</a>
-, <a class="el" href="classpyxbmct_1_1addonwindow_1_1_addon_full_window.html#ad19a314f7534f6e74917d2dcd4c795b0">pyxbmct.addonwindow.AddonFullWindow</a>
+: <a class="el" href="classaddonwindow_1_1___addon_window.html#a97370e723c771ed3a0336b09b61e08dc">addonwindow._AddonWindow</a>
+, <a class="el" href="classaddonwindow_1_1_addon_full_window.html#aed0736953768cc2ad382f759cca0fb75">addonwindow.AddonFullWindow</a>
 </li>
 <li>setGeometry()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_abstract_window.html#a050ce767ac1a434b80679c1c187eb557">pyxbmct.addonwindow.AbstractWindow</a>
-, <a class="el" href="classpyxbmct_1_1addonwindow_1_1_addon_window.html#a3da7f2a3de2ecce9c17068be31e52ee6">pyxbmct.addonwindow.AddonWindow</a>
+: <a class="el" href="classaddonwindow_1_1___abstract_window.html#a0010dc7ba4ccc38779c7962124351768">addonwindow._AbstractWindow</a>
+, <a class="el" href="classaddonwindow_1_1___addon_window.html#aa67111a6bddb166f9434dcba93e6c488">addonwindow._AddonWindow</a>
 </li>
 <li>setGrid()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_abstract_window.html#ae16f1d9947d46a819077b651a03a9dd4">pyxbmct.addonwindow.AbstractWindow</a>
-, <a class="el" href="classpyxbmct_1_1addonwindow_1_1_addon_window.html#a0d65337bd4f189c9e4ecd381a71b2ba4">pyxbmct.addonwindow.AddonWindow</a>
+: <a class="el" href="classaddonwindow_1_1___abstract_window.html#a509b62c97a7e96a7bcf7f5fc3fc878da">addonwindow._AbstractWindow</a>
+, <a class="el" href="classaddonwindow_1_1___addon_window.html#ab66ba015e4b3f99674cf3242d13d2114">addonwindow._AddonWindow</a>
+</li>
+<li>setHeight()
+: <a class="el" href="classxbmcgui_1_1_control.html#a82d3b0be47676a948e51cd92e8c7ebfd">xbmcgui.Control</a>
+</li>
+<li>setIconImage()
+: <a class="el" href="classxbmcgui_1_1_list_item.html#a292a93ab2894e61b72a268dc96a18f97">xbmcgui.ListItem</a>
+</li>
+<li>setImage()
+: <a class="el" href="classxbmcgui_1_1_control_image.html#acc5e48069c6528a9bcfd803578788610">xbmcgui.ControlImage</a>
+</li>
+<li>setImageDimensions()
+: <a class="el" href="classxbmcgui_1_1_control_list.html#a642ed276d981992443e2ef2baa306b18">xbmcgui.ControlList</a>
+</li>
+<li>setInfo()
+: <a class="el" href="classxbmcgui_1_1_list_item.html#a87b6752d34daaac9107ca9b4dd508b07">xbmcgui.ListItem</a>
+</li>
+<li>setItemHeight()
+: <a class="el" href="classxbmcgui_1_1_control_list.html#a6bce258a327883169d6523eafd0283f3">xbmcgui.ControlList</a>
+</li>
+<li>setLabel()
+: <a class="el" href="classxbmcgui_1_1_control_check_mark.html#a8a1d14085969e6cffe661ff009d1ea09">xbmcgui.ControlCheckMark</a>
+, <a class="el" href="classxbmcgui_1_1_control_edit.html#ae330cb5361c60b75dd34fdb0bebc9aa6">xbmcgui.ControlEdit</a>
+, <a class="el" href="classxbmcgui_1_1_control_radio_button.html#aaf7639cdecfffd9c7f528753b13c639e">xbmcgui.ControlRadioButton</a>
+, <a class="el" href="classxbmcgui_1_1_list_item.html#ad80fa9fb58c5516880270c02298546c3">xbmcgui.ListItem</a>
+, <a class="el" href="classxbmcgui_1_1_control_label.html#a94c0c8182e21b351bfd3e2cde7ef3eac">xbmcgui.ControlLabel</a>
+, <a class="el" href="classxbmcgui_1_1_control_button.html#a7ccdd58a913877062da4bc237d7590a6">xbmcgui.ControlButton</a>
+</li>
+<li>setLabel2()
+: <a class="el" href="classxbmcgui_1_1_list_item.html#a6fe7df76b3fab53a989f5bf687d63350">xbmcgui.ListItem</a>
+</li>
+<li>setNavigation()
+: <a class="el" href="classxbmcgui_1_1_control.html#a6479972abaf8663bcbad72187a9d91cc">xbmcgui.Control</a>
+</li>
+<li>setPageControlVisible()
+: <a class="el" href="classxbmcgui_1_1_control_list.html#a0030f57ced4da5ce0573b4faf3b317cc">xbmcgui.ControlList</a>
+</li>
+<li>setPath()
+: <a class="el" href="classxbmcgui_1_1_list_item.html#aa8562514a1b7893d5b2bd60abf4abd8e">xbmcgui.ListItem</a>
+</li>
+<li>setPercent()
+: <a class="el" href="classxbmcgui_1_1_control_progress.html#ae4b3ec80637812f57e86163a3ee48c7a">xbmcgui.ControlProgress</a>
+, <a class="el" href="classxbmcgui_1_1_control_slider.html#a3efec5bad9bebad72506e2149722b742">xbmcgui.ControlSlider</a>
+</li>
+<li>setPosition()
+: <a class="el" href="classxbmcgui_1_1_control.html#a66c31fa18a5f90e930733e0a51741152">xbmcgui.Control</a>
+</li>
+<li>setProperty()
+: <a class="el" href="classxbmcgui_1_1_window.html#a10845995a6d838e03491ed3717a07c5d">xbmcgui.Window</a>
+, <a class="el" href="classxbmcgui_1_1_window_x_m_l.html#a5bae416848171dd55ef4904b13bcc574">xbmcgui.WindowXML</a>
+, <a class="el" href="classxbmcgui_1_1_list_item.html#a5bf2eca86d404a7f0555afbf8c1b5bf1">xbmcgui.ListItem</a>
+</li>
+<li>setRadioDimension()
+: <a class="el" href="classxbmcgui_1_1_control_radio_button.html#a7d580b65bb00830d446a3dc6abaed3fb">xbmcgui.ControlRadioButton</a>
+</li>
+<li>setSelected()
+: <a class="el" href="classxbmcgui_1_1_control_radio_button.html#a15461c0df9fd5671bd4aad209f745164">xbmcgui.ControlRadioButton</a>
+, <a class="el" href="classxbmcgui_1_1_control_check_mark.html#a7c30793ba08222f03265d194cb4f4071">xbmcgui.ControlCheckMark</a>
+</li>
+<li>setSpace()
+: <a class="el" href="classxbmcgui_1_1_control_list.html#a7d39c6faf27dfaf2cf2e01d808e1789f">xbmcgui.ControlList</a>
+</li>
+<li>setStaticContent()
+: <a class="el" href="classxbmcgui_1_1_control_list.html#aa778bc1241d42798f10da13b94548a9e">xbmcgui.ControlList</a>
+</li>
+<li>setText()
+: <a class="el" href="classxbmcgui_1_1_control_text_box.html#ac6d776645f2669cc8cbdf1ecc390eb0b">xbmcgui.ControlTextBox</a>
+, <a class="el" href="classxbmcgui_1_1_control_edit.html#a28a63e662845d9a0f537fb27e113de46">xbmcgui.ControlEdit</a>
+</li>
+<li>setThumbnailImage()
+: <a class="el" href="classxbmcgui_1_1_list_item.html#a9411df0c6479bf80abb8531491fc0be6">xbmcgui.ListItem</a>
 </li>
 <li>setTitle()
-: <a class="el" href="classpyxbmct_1_1addonwindow_1_1_addon_window.html#a5ddd885906dfbb1aad3fac51142a14a1">pyxbmct.addonwindow.AddonWindow</a>
+: <a class="el" href="classaddonwindow_1_1___addon_window.html#ac7c26b16f8c9d04a0d1736e32de1c675">addonwindow._AddonWindow</a>
+</li>
+<li>setVisible()
+: <a class="el" href="classxbmcgui_1_1_control.html#af18f5e6dda71aca7dede9f5490aa24ae">xbmcgui.Control</a>
+</li>
+<li>setVisibleCondition()
+: <a class="el" href="classxbmcgui_1_1_control.html#a5c99152fe8e4af96023427088c75bb56">xbmcgui.Control</a>
+</li>
+<li>setWidth()
+: <a class="el" href="classxbmcgui_1_1_control.html#ab4644aab0a99936e5fdbac7fd6422d1b">xbmcgui.Control</a>
+</li>
+<li>show()
+: <a class="el" href="classxbmcgui_1_1_window.html#a11d8d25eb2566209f04dc2bea1f8c1d9">xbmcgui.Window</a>
+</li>
+<li>size()
+: <a class="el" href="classxbmcgui_1_1_control_list.html#adc74440f9a135b5ca4e3f507e0a537a9">xbmcgui.ControlList</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
+<li>update()
+: <a class="el" href="classxbmcgui_1_1_dialog_progress.html#a0188136d0a2832548e982422f4b9519d">xbmcgui.DialogProgress</a>
+, <a class="el" href="classxbmcgui_1_1_dialog_progress_b_g.html#a15d2e63d3c8baed15d7fe839303d9b60">xbmcgui.DialogProgressBG</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_y"></a>- y -</h3><ul>
+<li>yesno()
+: <a class="el" href="classxbmcgui_1_1_dialog.html#a6c705284b98d752fbd9584f07857aec0">xbmcgui.Dialog</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 24 2013 09:23:00 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 24 2013 21:24:08 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
