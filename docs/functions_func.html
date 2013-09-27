@@ -25,7 +25,7 @@
    <div id="projectname">PyXBMCt
    &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">PyXBMCt is a mini-framework which simplifies creating UI for XBMC addons.</div>
+   <div id="projectbrief">PyXBMCt is a framework which simplifies creating UI for XBMC addons.</div>
   </td>
  </tr>
  </tbody>
@@ -116,12 +116,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>__init__()
 : <a class="el" href="classaddonwindow_1_1___abstract_window.html#ab4a1459dae366bd2287584e4ceddf29d">addonwindow._AbstractWindow</a>
 , <a class="el" href="classaddonwindow_1_1___addon_window.html#a03bd9c4fcdc7912c6ed0ba995cb5f49d">addonwindow._AddonWindow</a>
-, <a class="el" href="classaddonwindow_1_1_addon_dialog_window.html#ad4452db0aa1fdbf0a7baa8f1cff3e6de">addonwindow.AddonDialogWindow</a>
 , <a class="el" href="classxbmcgui_1_1_control_progress.html#aa6ea72784b970a9ac522d53a2da55fc9">xbmcgui.ControlProgress</a>
-, <a class="el" href="classaddonwindow_1_1_addon_full_window.html#a06bea1051391f62b61f7e6194623567c">addonwindow.AddonFullWindow</a>
 </li>
 <li>__new__()
-: <a class="el" href="classxbmcgui_1_1_control_image.html#a3398369598fef33c5c7267595a1d2e75">xbmcgui.ControlImage</a>
+: <a class="el" href="classxbmcgui_1_1_control_group.html#a5f52d633c1af2c44fe0d36ee145bdf7f">xbmcgui.ControlGroup</a>
+, <a class="el" href="classxbmcgui_1_1_control_slider.html#aef6f4ae750a3e37b707409389d87b6a7">xbmcgui.ControlSlider</a>
+, <a class="el" href="classxbmcgui_1_1_control_image.html#a3398369598fef33c5c7267595a1d2e75">xbmcgui.ControlImage</a>
 , <a class="el" href="classxbmcgui_1_1_control_list.html#a73876d9451a6e62841c753520948d076">xbmcgui.ControlList</a>
 , <a class="el" href="classxbmcgui_1_1_control_check_mark.html#a393116b89527ab9ec08a5994231b4685">xbmcgui.ControlCheckMark</a>
 , <a class="el" href="classxbmcgui_1_1_control_button.html#a778f4aeb0b6854837b2faac6f133146f">xbmcgui.ControlButton</a>
@@ -144,8 +144,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classaddonwindow_1_1_label.html#a171b7a700883753833770ec9f963a4cd">addonwindow.Label</a>
 , <a class="el" href="classxbmcgui_1_1_control_edit.html#ae86a6054aaf7216cb92382edfb120e2b">xbmcgui.ControlEdit</a>
 , <a class="el" href="classxbmcgui_1_1_control_radio_button.html#adab71726907e93e273ea577d48d78efe">xbmcgui.ControlRadioButton</a>
-, <a class="el" href="classxbmcgui_1_1_control_slider.html#aef6f4ae750a3e37b707409389d87b6a7">xbmcgui.ControlSlider</a>
-, <a class="el" href="classxbmcgui_1_1_control_group.html#a5f52d633c1af2c44fe0d36ee145bdf7f">xbmcgui.ControlGroup</a>
 </li>
 </ul>
 
@@ -209,12 +207,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>connect()
 : <a class="el" href="classaddonwindow_1_1___abstract_window.html#a585e189033f5da2ba4dcf352f71a1758">addonwindow._AbstractWindow</a>
 </li>
-<li>connectAction()
-: <a class="el" href="classaddonwindow_1_1___abstract_window.html#ad7aa42e14b099d5cab6df14a29f58f43">addonwindow._AbstractWindow</a>
-</li>
-<li>connectControl()
-: <a class="el" href="classaddonwindow_1_1___abstract_window.html#a55571f6d364d50f04b766ddf8a041a36">addonwindow._AbstractWindow</a>
-</li>
 <li>controlDown()
 : <a class="el" href="classxbmcgui_1_1_control.html#ac1f37783fa10c32cf0e532a6bf0246a4">xbmcgui.Control</a>
 </li>
@@ -237,12 +229,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
 <li>disconnect()
 : <a class="el" href="classaddonwindow_1_1___abstract_window.html#af478c6502de3740aa8470349581876ed">addonwindow._AbstractWindow</a>
-</li>
-<li>disconnectAction()
-: <a class="el" href="classaddonwindow_1_1___abstract_window.html#abead809164754efa03da90e643671f58">addonwindow._AbstractWindow</a>
-</li>
-<li>disconnectControl()
-: <a class="el" href="classaddonwindow_1_1___abstract_window.html#af8fd0f55950b40aad859ca0838b8d0de">addonwindow._AbstractWindow</a>
 </li>
 <li>doModal()
 : <a class="el" href="classxbmcgui_1_1_window.html#a4e19af6813130f646e0438fdb9ff6a58">xbmcgui.Window</a>
@@ -444,12 +430,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classxbmcgui_1_1_window.html#a190570ca2eba054945bf4e1aca723c4b">xbmcgui.Window</a>
 </li>
 <li>removeItem()
-: <a class="el" href="classxbmcgui_1_1_window_x_m_l.html#af038857dfc61c96bc4822cc93eb4eb79">xbmcgui.WindowXML</a>
+: <a class="el" href="classxbmcgui_1_1_control_list.html#a6ea9a575f0eefbc6ccf01cf64c3feef3">xbmcgui.ControlList</a>
+, <a class="el" href="classxbmcgui_1_1_window_x_m_l.html#af038857dfc61c96bc4822cc93eb4eb79">xbmcgui.WindowXML</a>
 </li>
 <li>reset()
-: <a class="el" href="classxbmcgui_1_1_control_fade_label.html#a5a2aac3e5ef3dbccfb01ea6e8f9a1d94">xbmcgui.ControlFadeLabel</a>
+: <a class="el" href="classxbmcgui_1_1_control_list.html#af5374508d6fb7361a5d08ef736b3ba7a">xbmcgui.ControlList</a>
+, <a class="el" href="classxbmcgui_1_1_control_fade_label.html#a5a2aac3e5ef3dbccfb01ea6e8f9a1d94">xbmcgui.ControlFadeLabel</a>
 , <a class="el" href="classxbmcgui_1_1_control_text_box.html#aeec2d13f20addbfdf71e6f66422b5bcc">xbmcgui.ControlTextBox</a>
-, <a class="el" href="classxbmcgui_1_1_control_list.html#af5374508d6fb7361a5d08ef736b3ba7a">xbmcgui.ControlList</a>
 </li>
 </ul>
 
@@ -615,7 +602,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 25 2013 03:55:19 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 27 2013 09:10:34 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

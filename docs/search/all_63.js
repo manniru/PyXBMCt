@@ -7,8 +7,6 @@ var searchData=
   ['close',['close',['../classxbmcgui_1_1_window.html#a2763f79eae47ecc309e346f9e6320423',1,'xbmcgui.Window.close()'],['../classxbmcgui_1_1_dialog_progress.html#ade8ca5a500be009555757931b8f51285',1,'xbmcgui.DialogProgress.close()'],['../classxbmcgui_1_1_dialog_progress_b_g.html#a5f7b49eb73572b2e8bd5903b3a933a2a',1,'xbmcgui.DialogProgressBG.close()']]],
   ['columns',['columns',['../classaddonwindow_1_1___abstract_window.html#a0ed92979b47bad3b0a0e7f492d054818',1,'addonwindow._AbstractWindow.columns()'],['../classaddonwindow_1_1___addon_window.html#a65a749c9b2759f5356d563f301ff8640',1,'addonwindow._AddonWindow.columns()']]],
   ['connect',['connect',['../classaddonwindow_1_1___abstract_window.html#a585e189033f5da2ba4dcf352f71a1758',1,'addonwindow::_AbstractWindow']]],
-  ['connectaction',['connectAction',['../classaddonwindow_1_1___abstract_window.html#ad7aa42e14b099d5cab6df14a29f58f43',1,'addonwindow::_AbstractWindow']]],
-  ['connectcontrol',['connectControl',['../classaddonwindow_1_1___abstract_window.html#a55571f6d364d50f04b766ddf8a041a36',1,'addonwindow::_AbstractWindow']]],
   ['control',['Control',['../classxbmcgui_1_1_control.html',1,'xbmcgui']]],
   ['control_5ftext_5foffset_5fx',['CONTROL_TEXT_OFFSET_X',['../namespacexbmcgui.html#aa0ee3cde564e1cf9b9d2d2d78d580aaf',1,'xbmcgui']]],
   ['control_5ftext_5foffset_5fy',['CONTROL_TEXT_OFFSET_Y',['../namespacexbmcgui.html#ab8109deedbb6cc2fcd4ffaa4f50f9d42',1,'xbmcgui']]],

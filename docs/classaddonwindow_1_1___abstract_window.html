@@ -25,7 +25,7 @@
    <div id="projectname">PyXBMCt
    &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">PyXBMCt is a mini-framework which simplifies creating UI for XBMC addons.</div>
+   <div id="projectbrief">PyXBMCt is a framework which simplifies creating UI for XBMC addons.</div>
   </td>
  </tr>
  </tbody>
@@ -134,18 +134,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2132a060cc09a9dae7f03b6c35c069ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a585e189033f5da2ba4dcf352f71a1758"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___abstract_window.html#a585e189033f5da2ba4dcf352f71a1758">connect</a></td></tr>
 <tr class="separator:a585e189033f5da2ba4dcf352f71a1758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7aa42e14b099d5cab6df14a29f58f43"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___abstract_window.html#ad7aa42e14b099d5cab6df14a29f58f43">connectAction</a></td></tr>
-<tr class="separator:ad7aa42e14b099d5cab6df14a29f58f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55571f6d364d50f04b766ddf8a041a36"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___abstract_window.html#a55571f6d364d50f04b766ddf8a041a36">connectControl</a></td></tr>
-<tr class="separator:a55571f6d364d50f04b766ddf8a041a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7123f7679a457dfe54adbdae408e25b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___abstract_window.html#af7123f7679a457dfe54adbdae408e25b">executeConnected</a></td></tr>
-<tr class="separator:af7123f7679a457dfe54adbdae408e25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af478c6502de3740aa8470349581876ed"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___abstract_window.html#af478c6502de3740aa8470349581876ed">disconnect</a></td></tr>
 <tr class="separator:af478c6502de3740aa8470349581876ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abead809164754efa03da90e643671f58"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___abstract_window.html#abead809164754efa03da90e643671f58">disconnectAction</a></td></tr>
-<tr class="separator:abead809164754efa03da90e643671f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8fd0f55950b40aad859ca0838b8d0de"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___abstract_window.html#af8fd0f55950b40aad859ca0838b8d0de">disconnectControl</a></td></tr>
-<tr class="separator:af8fd0f55950b40aad859ca0838b8d0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7123f7679a457dfe54adbdae408e25b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___abstract_window.html#af7123f7679a457dfe54adbdae408e25b">executeConnected</a></td></tr>
+<tr class="separator:af7123f7679a457dfe54adbdae408e25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -215,19 +207,13 @@ This class is a basic "skeleton" for a control window.
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>event</em>, </td>
+          <td class="paramname"><em>signal</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>function</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>connected_list</em>&#160;</td>
+          <td class="paramname"><em>slot</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -236,79 +222,17 @@ This class is a basic "skeleton" for a control window.
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Connect an event to a function.
-This is a helper method not to be called directly.
-</pre> 
-</div>
-</div>
-<a class="anchor" id="ad7aa42e14b099d5cab6df14a29f58f43"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def addonwindow._AbstractWindow.connectAction </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>action</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>function</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">Connect a key action to a function or a method to be executed
-when the respective key pressed. lambda can be used to call the function
-with parameters.
-More action codes can be found at https://github.com/xbmc/xbmc/blob/master/xbmc/guilib/Key.h
-</pre> 
-</div>
-</div>
-<a class="anchor" id="a55571f6d364d50f04b766ddf8a041a36"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def addonwindow._AbstractWindow.connectControl </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>control</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>function</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">Connect a control to a function or a method to be executed
-when the control activated. lambda can be used to call the function
-with parameters.
+<pre class="fragment">Connect a signal to a slot.
+A signal can be an inctance of a Control object or an integer key action code.
+Basic key action codes are provided by PyXBMCT. More action codes can be found at
+https://github.com/xbmc/xbmc/blob/master/xbmc/guilib/Key.h
+A slot is a function or a method to be executed. Note that you must provide
+a function object (without brackets), not a function call!
+lambda can be used as a slot to call a function or a method with parameters.
+Examples:
+self.connect(self.exit_button, self.close)
+or
+self.connect(ACTION_NAV_BACK, self.close)
 </pre> 
 </div>
 </div>
@@ -326,13 +250,7 @@ with parameters.
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>event</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>connected_list</em>&#160;</td>
+          <td class="paramname"><em>signal</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -341,65 +259,14 @@ with parameters.
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Disconnect an event from a function.
-This is a helper method not to be called directly.
-Raises AddonWindowError if an event is not connected to any function.
-</pre> 
-</div>
-</div>
-<a class="anchor" id="abead809164754efa03da90e643671f58"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def addonwindow._AbstractWindow.disconnectAction </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>action</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">Disconnect an action from a function.
-Raises AddonWindowError if an action is not connected to any function.
-</pre> 
-</div>
-</div>
-<a class="anchor" id="af8fd0f55950b40aad859ca0838b8d0de"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def addonwindow._AbstractWindow.disconnectControl </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>control</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<pre class="fragment">Disconnect a control from a function.
-Raises AddonWindowError if a control is not connected to any function.
+<pre class="fragment">Disconnect an signal from a slot.
+A signal can be an inctance of a Control object or an integer key action code
+which has previously been connected to a slot, i.e. function or a method.
+Raises AddonWindowError if a signal is not connected to any slot.
+Examples:
+self.disconnect(self.exit_button)
+or
+self.disconnect(ACTION_NAV_BACK)
 </pre> 
 </div>
 </div>
@@ -603,7 +470,7 @@ size and aspect adjustments. Negative values can be used
 to make a control overlap with grid cells next to it, if necessary.
 Raises AddonWindowError if a grid has not yet been set.
 Example:
-    self.placeControl(self.label, 0, 1)
+self.placeControl(self.label, 0, 1)
 </pre> 
 </div>
 </div>
@@ -649,11 +516,10 @@ Example:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Set control window width, height and coordinates (optional).
-
 pos_x, pos_y - coordinates of the top left corner of the window.
-if pos_x=0, pos_y=0, the window will be placed at the center of the screen.
+If pos_x=0, pos_y=0, the window will be placed at the center of the screen.
 Example:
-    self.setGeometry(500, 500)
+self.setGeometry(500, 500)
 </pre> 
 </div>
 </div>
@@ -687,9 +553,8 @@ Example:
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Set window grid layout of rows * columns.
-
 Example:
-    self.setGrid(5, 4)
+self.setGrid(5, 4)
 </pre> 
 </div>
 </div>
@@ -844,7 +709,7 @@ Example:
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 25 2013 03:55:18 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 27 2013 09:10:33 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
