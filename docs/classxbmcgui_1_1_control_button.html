@@ -108,8 +108,8 @@ Inheritance diagram for xbmcgui.ControlButton:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a778f4aeb0b6854837b2faac6f133146f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_button.html#a778f4aeb0b6854837b2faac6f133146f">__new__</a></td></tr>
-<tr class="separator:a778f4aeb0b6854837b2faac6f133146f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dabefcc8f4f6cc2fc1cbd90fb9c67b0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_button.html#a3dabefcc8f4f6cc2fc1cbd90fb9c67b0">__init__</a></td></tr>
+<tr class="separator:a3dabefcc8f4f6cc2fc1cbd90fb9c67b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb847b8b85f4d3baa0928cee6d210d8e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_button.html#afb847b8b85f4d3baa0928cee6d210d8e">setDisabledColor</a></td></tr>
 <tr class="separator:afb847b8b85f4d3baa0928cee6d210d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ccdd58a913877062da4bc237d7590a6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_button.html#a7ccdd58a913877062da4bc237d7590a6">setLabel</a></td></tr>
@@ -165,39 +165,17 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">ControlButton class.
-
-x: integer - x coordinate of control.
-y: integer - y coordinate of control.
-width: integer - width of control.
-height: integer - height of control.
-label: string or unicode - text string.
-focusTexture: string - filename for focus texture.
-noFocusTexture: string - filename for no focus texture.
-textOffsetX: integer - x offset of label.
-textOffsetY: integer - y offset of label.
-alignment: integer - alignment of label - *Note, see xbfont.h
-font: string - font used for label text. (e.g. 'font13')
-textColor: hexstring - color of enabled button's label. (e.g. '0xFFFFFFFF')
-disabledColor: hexstring - color of disabled button's label. (e.g. '0xFFFF3300')
-angle: integer - angle of control. (+ rotates CCW, - rotates CW)
-shadowColor: hexstring - color of button's label's shadow. (e.g. '0xFF000000')
-focusedColor: hexstring - color of focused button's label. (e.g. '0xFF00FFFF')
-
-Note:
-    After you create the control, you need to add it to the window with addControl().
-
-Example:
-    self.button = xbmcgui.ControlButton(100, 250, 200, 50, 'Status', font='font14')
-</pre> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a778f4aeb0b6854837b2faac6f133146f"></a>
+Creates a clickable button.
+</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a3dabefcc8f4f6cc2fc1cbd90fb9c67b0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def xbmcgui.ControlButton.__new__ </td>
+          <td class="memname">def xbmcgui.ControlButton.__init__ </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>cls</em>, </td>
+          <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -302,9 +280,32 @@ Example:
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">x: integer - x coordinate of control.
+y: integer - y coordinate of control.
+width: integer - width of control.
+height: integer - height of control.
+label: string or unicode - text string.
+focusTexture: string - filename for focus texture.
+noFocusTexture: string - filename for no focus texture.
+textOffsetX: integer - x offset of label.
+textOffsetY: integer - y offset of label.
+alignment: integer - alignment of label - *Note, see xbfont.h
+font: string - font used for label text. (e.g. 'font13')
+textColor: hexstring - color of enabled button's label. (e.g. '0xFFFFFFFF')
+disabledColor: hexstring - color of disabled button's label. (e.g. '0xFFFF3300')
+angle: integer - angle of control. (+ rotates CCW, - rotates CW)
+shadowColor: hexstring - color of button's label's shadow. (e.g. '0xFF000000')
+focusedColor: hexstring - color of focused button's label. (e.g. '0xFF00FFFF')
 
+Note:
+    After you create the control, you need to add it to the window with addControl().
+
+Example:
+    self.button = xbmcgui.ControlButton(100, 250, 200, 50, 'Status', font='font14')
+</pre> 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="afe4124361b05da8599196bc289441a15"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1269,7 +1270,7 @@ example:
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 27 2013 09:10:34 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 2 2013 22:09:16 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

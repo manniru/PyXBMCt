@@ -160,22 +160,6 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">ControlProgress class.
-
-x: integer - x coordinate of control.
-y: integer - y coordinate of control.
-width: integer - width of control.
-height: integer - height of control.
-texturebg: string - image filename.
-textureleft: string - image filename.
-texturemid: string - image filename.
-textureright: string - image filename.
-textureoverlay: string - image filename.
-
-Note:
-    After you create the control, you need to add it to the window with addControl().
-
-Example:
-    self.progress = xbmcgui.ControlProgress(100, 250, 125, 75)
 </pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aa6ea72784b970a9ac522d53a2da55fc9"></a>
 <div class="memitem">
@@ -185,7 +169,7 @@ Example:
           <td class="memname">def xbmcgui.ControlProgress.__init__ </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>cls</em>, </td>
+          <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -248,7 +232,22 @@ Example:
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">x: integer - x coordinate of control.
+y: integer - y coordinate of control.
+width: integer - width of control.
+height: integer - height of control.
+texturebg: string - image filename.
+textureleft: string - image filename.
+texturemid: string - image filename.
+textureright: string - image filename.
+textureoverlay: string - image filename.
 
+Note:
+    After you create the control, you need to add it to the window with addControl().
+
+Example:
+    self.progress = xbmcgui.ControlProgress(100, 250, 125, 75)
+</pre> 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -1135,7 +1134,7 @@ example:
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 27 2013 09:10:34 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 2 2013 22:09:16 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

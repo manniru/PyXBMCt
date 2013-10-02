@@ -108,8 +108,8 @@ Inheritance diagram for xbmcgui.ControlFadeLabel:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad2823d2b16a0f2638eb4829aabe02d48"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_fade_label.html#ad2823d2b16a0f2638eb4829aabe02d48">__new__</a></td></tr>
-<tr class="separator:ad2823d2b16a0f2638eb4829aabe02d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0b9c689aa524341408401ceeba1101d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_fade_label.html#aa0b9c689aa524341408401ceeba1101d">__init__</a></td></tr>
+<tr class="separator:aa0b9c689aa524341408401ceeba1101d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace8674fad7ecbd2dd5e333d351cf38f9"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_fade_label.html#ace8674fad7ecbd2dd5e333d351cf38f9">addLabel</a></td></tr>
 <tr class="separator:ace8674fad7ecbd2dd5e333d351cf38f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a2aac3e5ef3dbccfb01ea6e8f9a1d94"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_fade_label.html#a5a2aac3e5ef3dbccfb01ea6e8f9a1d94">reset</a></td></tr>
@@ -160,31 +160,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab4644aab0a99936e5fdbac7fd6422d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">Control that scroll's lables.
-
-x: integer - x coordinate of control.
-y: integer - y coordinate of control.
-width: integer - width of control.
-height: integer - height of control.
-font: string - font used for label text. (e.g. 'font13')
-textColor: hexstring - color of fadelabel's labels. (e.g. '0xFFFFFFFF')
-alignment: integer - alignment of label - *Note, see xbfont.h
-
-Note:
-    After you create the control, you need to add it to the window with addControl().
-
-Example:
-self.fadelabel = xbmcgui.ControlFadeLabel(100, 250, 200, 50, textColor='0xFFFFFFFF')
-</pre> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad2823d2b16a0f2638eb4829aabe02d48"></a>
+<div class="textblock"><pre class="fragment">Control which scrolls long label text.</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="aa0b9c689aa524341408401ceeba1101d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def xbmcgui.ControlFadeLabel.__new__ </td>
+          <td class="memname">def xbmcgui.ControlFadeLabel.__init__ </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>cls</em>, </td>
+          <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -235,9 +220,23 @@ self.fadelabel = xbmcgui.ControlFadeLabel(100, 250, 200, 50, textColor='0xFFFFFF
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment"> x: integer - x coordinate of control.
+y: integer - y coordinate of control.
+width: integer - width of control.
+height: integer - height of control.
+font: string - font used for label text. (e.g. 'font13')
+textColor: hexstring - color of fadelabel's labels. (e.g. '0xFFFFFFFF')
+alignment: integer - alignment of label - *Note, see xbfont.h
 
+Note:
+    After you create the control, you need to add it to the window with addControl().
+
+Example:
+self.fadelabel = xbmcgui.ControlFadeLabel(100, 250, 200, 50, textColor='0xFFFFFFFF')
+</pre> 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="afe4124361b05da8599196bc289441a15"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1118,7 +1117,7 @@ example:
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 27 2013 09:10:34 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 2 2013 22:09:15 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

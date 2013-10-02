@@ -108,8 +108,8 @@ Inheritance diagram for xbmcgui.ControlLabel:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5ec55582c06e1f3dc91eb6170f2000ff"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_label.html#a5ec55582c06e1f3dc91eb6170f2000ff">__new__</a></td></tr>
-<tr class="separator:a5ec55582c06e1f3dc91eb6170f2000ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2efc95bbb3c111330e1ad2eb8c35b7c2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_label.html#a2efc95bbb3c111330e1ad2eb8c35b7c2">__init__</a></td></tr>
+<tr class="separator:a2efc95bbb3c111330e1ad2eb8c35b7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94c0c8182e21b351bfd3e2cde7ef3eac"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_label.html#a94c0c8182e21b351bfd3e2cde7ef3eac">setLabel</a></td></tr>
 <tr class="separator:a94c0c8182e21b351bfd3e2cde7ef3eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea39ee0a42db7542c6998ebce4a2ef9d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_label.html#aea39ee0a42db7542c6998ebce4a2ef9d">getLabel</a></td></tr>
@@ -161,34 +161,17 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">ControlLabel class.
-
-x: integer - x coordinate of control.
-y: integer - y coordinate of control.
-width: integer - width of control.
-height: integer - height of control.
-label: string or unicode - text string.
-font: string - font used for label text. (e.g. 'font13')
-textColor: hexstring - color of enabled label's label. (e.g. '0xFFFFFFFF')
-disabledColor: hexstring - color of disabled label's label. (e.g. '0xFFFF3300')
-alignment: integer - alignment of label - *Note, see xbfont.h
-hasPath: bool - True=stores a path / False=no path.
-angle: integer - angle of control. (+ rotates CCW, - rotates CW)"
-
-Note:
-    After you create the control, you need to add it to the window with addControl().
-
-Example:
-    self.label = xbmcgui.ControlLabel(100, 250, 125, 75, 'Status', angle=45)
-</pre> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a5ec55582c06e1f3dc91eb6170f2000ff"></a>
+Creates a text label.
+</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a2efc95bbb3c111330e1ad2eb8c35b7c2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def xbmcgui.ControlLabel.__new__ </td>
+          <td class="memname">def xbmcgui.ControlLabel.__init__ </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>cls</em>, </td>
+          <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -263,9 +246,27 @@ Example:
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">x: integer - x coordinate of control.
+y: integer - y coordinate of control.
+width: integer - width of control.
+height: integer - height of control.
+label: string or unicode - text string.
+font: string - font used for label text. (e.g. 'font13')
+textColor: hexstring - color of enabled label's label. (e.g. '0xFFFFFFFF')
+disabledColor: hexstring - color of disabled label's label. (e.g. '0xFFFF3300')
+alignment: integer - alignment of label - *Note, see xbfont.h
+hasPath: bool - True=stores a path / False=no path.
+angle: integer - angle of control. (+ rotates CCW, - rotates CW)"
 
+Note:
+    After you create the control, you need to add it to the window with addControl().
+
+Example:
+    self.label = xbmcgui.ControlLabel(100, 250, 125, 75, 'Status', angle=45)
+</pre> 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="afe4124361b05da8599196bc289441a15"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1146,7 +1147,7 @@ example:
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 27 2013 09:10:34 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 2 2013 22:09:15 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

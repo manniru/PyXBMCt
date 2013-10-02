@@ -149,14 +149,14 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a72a12e9bd6c1fc5dad82407649d1751b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1752db14cc90dbe9bd6f6a07a6f7be1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___abstract_window.html#ac1752db14cc90dbe9bd6f6a07a6f7be1">height</a></td></tr>
 <tr class="separator:ac1752db14cc90dbe9bd6f6a07a6f7be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb8746c89fb16d10d0c56f5740561009"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___abstract_window.html#adb8746c89fb16d10d0c56f5740561009">x</a></td></tr>
-<tr class="separator:adb8746c89fb16d10d0c56f5740561009"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b70dfaa872f05a36a53f28f269ac2c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___abstract_window.html#a6b70dfaa872f05a36a53f28f269ac2c2">y</a></td></tr>
-<tr class="separator:a6b70dfaa872f05a36a53f28f269ac2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a464456d63228f384c82da26256d02052"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___abstract_window.html#a464456d63228f384c82da26256d02052">rows</a></td></tr>
 <tr class="separator:a464456d63228f384c82da26256d02052"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ed92979b47bad3b0a0e7f492d054818"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___abstract_window.html#a0ed92979b47bad3b0a0e7f492d054818">columns</a></td></tr>
 <tr class="separator:a0ed92979b47bad3b0a0e7f492d054818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8746c89fb16d10d0c56f5740561009"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___abstract_window.html#adb8746c89fb16d10d0c56f5740561009">x</a></td></tr>
+<tr class="separator:adb8746c89fb16d10d0c56f5740561009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b70dfaa872f05a36a53f28f269ac2c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___abstract_window.html#a6b70dfaa872f05a36a53f28f269ac2c2">y</a></td></tr>
+<tr class="separator:a6b70dfaa872f05a36a53f28f269ac2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9836377598cab2b0b5b7b3514cf137e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___abstract_window.html#ac9836377598cab2b0b5b7b3514cf137e">grid_x</a></td></tr>
 <tr class="separator:ac9836377598cab2b0b5b7b3514cf137e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad79470d401968fb4dced786211bfe9da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___abstract_window.html#ad79470d401968fb4dced786211bfe9da">grid_y</a></td></tr>
@@ -207,13 +207,13 @@ This class is a basic "skeleton" for a control window.
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>signal</em>, </td>
+          <td class="paramname"><em>event</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>slot</em>&#160;</td>
+          <td class="paramname"><em>function</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -222,13 +222,22 @@ This class is a basic "skeleton" for a control window.
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Connect a signal to a slot.
-A signal can be an inctance of a Control object or an integer key action code.
-Basic key action codes are provided by PyXBMCT. More action codes can be found at
+<pre class="fragment">Connect an event to a function.
+
+An event can be an inctance of a Control object or an integer key action code.
+Several basic key action codes are provided by PyXBMCT. More action codes can be found at
 https://github.com/xbmc/xbmc/blob/master/xbmc/guilib/Key.h
-A slot is a function or a method to be executed. Note that you must provide
-a function object (without brackets), not a function call!
-lambda can be used as a slot to call a function or a method with parameters.
+
+You can connect the following Controls: Button, RadioButton and List. Other Controls do not
+generate any control events when activated so their connections won't work.
+To catch Slider events you need to connect the following key actions:
+ACTION_MOVE_LEFT, ACTION_MOVE_RIGHT and ACTION_MOUSE_DRAG, and do a check
+whether the Slider is focused.
+
+"function" parameter is a function or a method to be executed. Note that you must provide
+a function object [without brackets ()], not a function call!
+lambda can be used as a function to call another function or method with parameters.
+
 Examples:
 self.connect(self.exit_button, self.close)
 or
@@ -250,7 +259,7 @@ self.connect(ACTION_NAV_BACK, self.close)
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>signal</em>&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -259,10 +268,12 @@ self.connect(ACTION_NAV_BACK, self.close)
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Disconnect an signal from a slot.
-A signal can be an inctance of a Control object or an integer key action code
-which has previously been connected to a slot, i.e. function or a method.
-Raises AddonWindowError if a signal is not connected to any slot.
+<pre class="fragment">Disconnect an event from a function.
+
+An event can be an inctance of a Control object or an integer key action code
+which has previously been connected to a function or a method.
+Raises AddonWindowError if an event is not connected to any function.
+
 Examples:
 self.disconnect(self.exit_button)
 or
@@ -500,6 +511,18 @@ self.placeControl(self.label, 0, 1)
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>rows_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>columns_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
           <td class="paramname"><em>pos_x</em> = <code>-1</code>, </td>
         </tr>
         <tr>
@@ -515,11 +538,16 @@ self.placeControl(self.label, 0, 1)
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Set control window width, height and coordinates (optional).
-pos_x, pos_y - coordinates of the top left corner of the window.
-If pos_x=0, pos_y=0, the window will be placed at the center of the screen.
+<pre class="fragment">Set width, height, Grid layout, and coordinates (optional) for a new control window.
+
+Parameters:
+width_, height_: widgh and height of the created window.
+rows_, columns_: rows and colums of the Grid layout to place controls on.
+pos_x, pos_y (optional): coordinates of the top left corner of the window.
+If pos_x and pos_y are not privided, the window will be placed
+at the center of the screen.
 Example:
-self.setGeometry(500, 500)
+self.setGeometry(400, 500, 5, 4)
 </pre> 
 </div>
 </div>
@@ -531,30 +559,13 @@ self.setGeometry(500, 500)
           <td class="memname">def addonwindow._AbstractWindow.setGrid </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>self</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>rows_</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>columns_</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <pre class="fragment">Set window grid layout of rows * columns.
-Example:
-self.setGrid(5, 4)
+This is a helper method not to be called directly.
 </pre> 
 </div>
 </div>
@@ -709,7 +720,7 @@ self.setGrid(5, 4)
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 27 2013 09:10:33 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 2 2013 22:09:15 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -108,8 +108,8 @@ Inheritance diagram for xbmcgui.ControlEdit:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae86a6054aaf7216cb92382edfb120e2b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_edit.html#ae86a6054aaf7216cb92382edfb120e2b">__new__</a></td></tr>
-<tr class="separator:ae86a6054aaf7216cb92382edfb120e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb206dacb7cd029745ca626fe00b1028"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_edit.html#acb206dacb7cd029745ca626fe00b1028">__init__</a></td></tr>
+<tr class="separator:acb206dacb7cd029745ca626fe00b1028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4df24dfaed27b29d0b6dc5a8a69c6d4c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_edit.html#a4df24dfaed27b29d0b6dc5a8a69c6d4c">getLabel</a></td></tr>
 <tr class="separator:a4df24dfaed27b29d0b6dc5a8a69c6d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a341d8c2236f09a67e6f18177fc913dd8"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_edit.html#a341d8c2236f09a67e6f18177fc913dd8">getText</a></td></tr>
@@ -165,39 +165,18 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">ControlEdit class.
-
 ControlEdit(x, y, width, height, label[, font, textColor,
                                                 disabledColor, alignment, focusTexture, noFocusTexture])
-
-x              : integer - x coordinate of control.
-y              : integer - y coordinate of control.
-width          : integer - width of control.
-height         : integer - height of control.
-label          : string or unicode - text string.
-font           : [opt] string - font used for label text. (e.g. 'font13')
-textColor      : [opt] hexstring - color of enabled label's label. (e.g. '0xFFFFFFFF')
-disabledColor  : [opt] hexstring - color of disabled label's label. (e.g. '0xFFFF3300')
-_alignment      : [opt] integer - alignment of label - *Note, see xbfont.h
-focusTexture   : [opt] string - filename for focus texture.
-noFocusTexture : [opt] string - filename for no focus texture.
-isPassword     : [opt] bool - if true, mask text value.
-
-*Note, You can use the above as keywords for arguments and skip certain optional arguments.
-Once you use a keyword, all following arguments require the keyword.
-After you create the control, you need to add it to the window with addControl().
-
-example:
-- self.edit = xbmcgui.ControlEdit(100, 250, 125, 75, 'Status')
-</pre> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ae86a6054aaf7216cb92382edfb120e2b"></a>
+</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="acb206dacb7cd029745ca626fe00b1028"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def xbmcgui.ControlEdit.__new__ </td>
+          <td class="memname">def xbmcgui.ControlEdit.__init__ </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>cls</em>, </td>
+          <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -272,9 +251,29 @@ example:
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">x              : integer - x coordinate of control.
+y              : integer - y coordinate of control.
+width          : integer - width of control.
+height         : integer - height of control.
+label          : string or unicode - text string.
+font           : [opt] string - font used for label text. (e.g. 'font13')
+textColor      : [opt] hexstring - color of enabled label's label. (e.g. '0xFFFFFFFF')
+disabledColor  : [opt] hexstring - color of disabled label's label. (e.g. '0xFFFF3300')
+_alignment      : [opt] integer - alignment of label - *Note, see xbfont.h
+focusTexture   : [opt] string - filename for focus texture.
+noFocusTexture : [opt] string - filename for no focus texture.
+isPassword     : [opt] bool - if true, mask text value.
 
+*Note, You can use the above as keywords for arguments and skip certain optional arguments.
+Once you use a keyword, all following arguments require the keyword.
+After you create the control, you need to add it to the window with addControl().
+
+example:
+- self.edit = xbmcgui.ControlEdit(100, 250, 125, 75, 'Status')
+</pre> 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="afe4124361b05da8599196bc289441a15"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1212,7 +1211,7 @@ example:
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 27 2013 09:10:34 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 2 2013 22:09:16 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

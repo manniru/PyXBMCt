@@ -108,8 +108,8 @@ Inheritance diagram for xbmcgui.ControlTextBox:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:accb839098ac85c28d24761df8b8d7939"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_text_box.html#accb839098ac85c28d24761df8b8d7939">__new__</a></td></tr>
-<tr class="separator:accb839098ac85c28d24761df8b8d7939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdaadebf967ac406959977c41455cbbe"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_text_box.html#afdaadebf967ac406959977c41455cbbe">__init__</a></td></tr>
+<tr class="separator:afdaadebf967ac406959977c41455cbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6d776645f2669cc8cbdf1ecc390eb0b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_text_box.html#ac6d776645f2669cc8cbdf1ecc390eb0b">setText</a></td></tr>
 <tr class="separator:ac6d776645f2669cc8cbdf1ecc390eb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eb752c9a7823d9aeb0fef0539e52f1e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_text_box.html#a3eb752c9a7823d9aeb0fef0539e52f1e">scroll</a></td></tr>
@@ -163,29 +163,17 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">ControlTextBox class.
-
-x: integer - x coordinate of control.
-y: integer - y coordinate of control.
-width: integer - width of control.
-height: integer - height of control.
-font: string - font used for text. (e.g. 'font13')
-textColor: hexstring - color of textbox's text. (e.g. '0xFFFFFFFF')
-
-Note:
-    After you create the control, you need to add it to the window with addControl().
-
-Example:
-    self.textbox = xbmcgui.ControlTextBox(100, 250, 300, 300, textColor='0xFFFFFFFF')
-</pre> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="accb839098ac85c28d24761df8b8d7939"></a>
+Creates a box for multi-line text.
+</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="afdaadebf967ac406959977c41455cbbe"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def xbmcgui.ControlTextBox.__new__ </td>
+          <td class="memname">def xbmcgui.ControlTextBox.__init__ </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>cls</em>, </td>
+          <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -230,9 +218,22 @@ Example:
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">x: integer - x coordinate of control.
+y: integer - y coordinate of control.
+width: integer - width of control.
+height: integer - height of control.
+font: string - font used for text. (e.g. 'font13')
+textColor: hexstring - color of textbox's text. (e.g. '0xFFFFFFFF')
 
+Note:
+    After you create the control, you need to add it to the window with addControl().
+
+Example:
+    self.textbox = xbmcgui.ControlTextBox(100, 250, 300, 300, textColor='0xFFFFFFFF')
+</pre> 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="afe4124361b05da8599196bc289441a15"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1142,7 +1143,7 @@ example:
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 27 2013 09:10:34 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 2 2013 22:09:15 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

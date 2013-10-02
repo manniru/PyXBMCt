@@ -106,8 +106,8 @@ Inheritance diagram for xbmcgui.ListItem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acade3c6e134e93a6460a3fd73a687180"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_list_item.html#acade3c6e134e93a6460a3fd73a687180">__new__</a></td></tr>
-<tr class="separator:acade3c6e134e93a6460a3fd73a687180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb5c46cb2a799f1d58294d4a92393ac"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_list_item.html#a9bb5c46cb2a799f1d58294d4a92393ac">__init__</a></td></tr>
+<tr class="separator:a9bb5c46cb2a799f1d58294d4a92393ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad392bf7b2a2f6fcb3e54d3d0a62bb086"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_list_item.html#ad392bf7b2a2f6fcb3e54d3d0a62bb086">getLabel</a></td></tr>
 <tr class="separator:ad392bf7b2a2f6fcb3e54d3d0a62bb086"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aa41722d2b298ac324bb9a7e3496402"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_list_item.html#a6aa41722d2b298ac324bb9a7e3496402">getLabel2</a></td></tr>
@@ -136,38 +136,28 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa8562514a1b7893d5b2bd60abf4abd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">Creates a new ListItem.
-
-label: string or unicode - label1 text.
-label2: string or unicode - label2 text.
-iconImage: string - icon filename.
-thumbnailImage: string - thumbnail filename.
-path: string or unicode - listitem's path.
-
-Example:
-listitem = xbmcgui.ListItem('Casino Royale', '[PG-13]', 'blank-poster.tbn', 'poster.tbn', path='f:\\movies\\casino_royale.mov')
-</pre> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="acade3c6e134e93a6460a3fd73a687180"></a>
+<div class="textblock"><pre class="fragment">Creates a new ListItem.</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a9bb5c46cb2a799f1d58294d4a92393ac"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def xbmcgui.ListItem.__new__ </td>
+          <td class="memname">def xbmcgui.ListItem.__init__ </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>cls</em>, </td>
+          <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>label</em> = <code>None</code>, </td>
+          <td class="paramname"><em>label</em> = <code>''</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>label2</em> = <code>None</code>, </td>
+          <td class="paramname"><em>label2</em> = <code>''</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -194,9 +184,18 @@ listitem = xbmcgui.ListItem('Casino Royale', '[PG-13]', 'blank-poster.tbn', 'pos
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">label: string or unicode - label1 text.
+label2: string or unicode - label2 text.
+iconImage: string - icon filename.
+thumbnailImage: string - thumbnail filename.
+path: string or unicode - listitem's path.
 
+Example:
+listitem = xbmcgui.ListItem('Casino Royale', '[PG-13]', 'blank-poster.tbn', 'poster.tbn', path='f:\\movies\\casino_royale.mov')
+</pre> 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a1732da6da645a89fa1b9e9c51826e8c1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -648,7 +647,7 @@ thumb: string or unicode - image filename.
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 27 2013 09:10:34 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 2 2013 22:09:15 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

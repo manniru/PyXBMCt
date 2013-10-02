@@ -108,8 +108,8 @@ Inheritance diagram for xbmcgui.ControlRadioButton:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adab71726907e93e273ea577d48d78efe"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_radio_button.html#adab71726907e93e273ea577d48d78efe">__new__</a></td></tr>
-<tr class="separator:adab71726907e93e273ea577d48d78efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87b1c9f1b66c3a61bfad3cb63f0a7ce4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_radio_button.html#a87b1c9f1b66c3a61bfad3cb63f0a7ce4">__init__</a></td></tr>
+<tr class="separator:a87b1c9f1b66c3a61bfad3cb63f0a7ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15461c0df9fd5671bd4aad209f745164"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_radio_button.html#a15461c0df9fd5671bd4aad209f745164">setSelected</a></td></tr>
 <tr class="separator:a15461c0df9fd5671bd4aad209f745164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ed4bfd23d167ac4f6514f48370a8021"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_radio_button.html#a0ed4bfd23d167ac4f6514f48370a8021">isSelected</a></td></tr>
@@ -165,41 +165,17 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">ControlRadioButton class.
-
-x: integer - x coordinate of control.
-y: integer - y coordinate of control.
-width: integer - width of control.
-height: integer - height of control.
-label: string or unicode - text string.
-focusTexture: string - filename for focus texture.
-noFocusTexture: string - filename for no focus texture.
-textOffsetX: integer - x offset of label.
-textOffsetY: integer - y offset of label.
-_alignment: integer - alignment of label - *Note, see xbfont.h
-font: string - font used for label text. (e.g. 'font13')
-textColor: hexstring - color of enabled radio button's label. (e.g. '0xFFFFFFFF')
-disabledColor: hexstring - color of disabled radio button's label. (e.g. '0xFFFF3300')
-angle: integer - angle of control. (+ rotates CCW, - rotates CW)
-shadowColor: hexstring - color of radio button's label's shadow. (e.g. '0xFF000000')
-focusedColor: hexstring - color of focused radio button's label. (e.g. '0xFF00FFFF')
-TextureRadioFocu: string - filename for radio focus texture.
-TextureRadioNoFocus: string - filename for radio no focus texture.
-
-Note:
-    After you create the control, you need to add it to the window with addControl().
-
-Example:
-    self.radiobutton = xbmcgui.ControlRadioButton(100, 250, 200, 50, 'Status', font='font14')
-</pre> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="adab71726907e93e273ea577d48d78efe"></a>
+Creates a radio-button with 2 states.
+</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a87b1c9f1b66c3a61bfad3cb63f0a7ce4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def xbmcgui.ControlRadioButton.__new__ </td>
+          <td class="memname">def xbmcgui.ControlRadioButton.__init__ </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>cls</em>, </td>
+          <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -316,9 +292,34 @@ Example:
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">x: integer - x coordinate of control.
+y: integer - y coordinate of control.
+width: integer - width of control.
+height: integer - height of control.
+label: string or unicode - text string.
+focusTexture: string - filename for focus texture.
+noFocusTexture: string - filename for no focus texture.
+textOffsetX: integer - x offset of label.
+textOffsetY: integer - y offset of label.
+_alignment: integer - alignment of label - *Note, see xbfont.h
+font: string - font used for label text. (e.g. 'font13')
+textColor: hexstring - color of enabled radio button's label. (e.g. '0xFFFFFFFF')
+disabledColor: hexstring - color of disabled radio button's label. (e.g. '0xFFFF3300')
+angle: integer - angle of control. (+ rotates CCW, - rotates CW)
+shadowColor: hexstring - color of radio button's label's shadow. (e.g. '0xFF000000')
+focusedColor: hexstring - color of focused radio button's label. (e.g. '0xFF00FFFF')
+TextureRadioFocu: string - filename for radio focus texture.
+TextureRadioNoFocus: string - filename for radio no focus texture.
 
+Note:
+    After you create the control, you need to add it to the window with addControl().
+
+Example:
+    self.radiobutton = xbmcgui.ControlRadioButton(100, 250, 200, 50, 'Status', font='font14')
+</pre> 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="afe4124361b05da8599196bc289441a15"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1319,7 +1320,7 @@ example:
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 27 2013 09:10:34 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 2 2013 22:09:16 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

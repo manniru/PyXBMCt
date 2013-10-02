@@ -108,8 +108,8 @@ Inheritance diagram for xbmcgui.ControlList:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a73876d9451a6e62841c753520948d076"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_list.html#a73876d9451a6e62841c753520948d076">__new__</a></td></tr>
-<tr class="separator:a73876d9451a6e62841c753520948d076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9782bc679b7a221cc5cedb4a3985b9be"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_list.html#a9782bc679b7a221cc5cedb4a3985b9be">__init__</a></td></tr>
+<tr class="separator:a9782bc679b7a221cc5cedb4a3985b9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a582f00507b3583337642709db5e7ddec"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_list.html#a582f00507b3583337642709db5e7ddec">addItem</a></td></tr>
 <tr class="separator:a582f00507b3583337642709db5e7ddec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ebc6dee3a572051d4224ed384e56054"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_control_list.html#a3ebc6dee3a572051d4224ed384e56054">addItems</a></td></tr>
@@ -191,39 +191,17 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">ControlList class.
-
-x: integer - x coordinate of control.
-y: integer - y coordinate of control.
-width: integer - width of control.
-height: integer - height of control.
-font: string - font used for items label. (e.g. 'font13')
-textColor: hexstring - color of items label. (e.g. '0xFFFFFFFF')
-buttonTexture: string - filename for no focus texture.
-buttonFocusTexture: string - filename for focus texture.
-selectedColor: integer - x offset of label.
-_imageWidth: integer - width of items icon or thumbnail.
-_imageHeight: integer - height of items icon or thumbnail.
-_itemTextXOffset: integer - x offset of items label.
-_itemTextYOffset: integer - y offset of items label.
-_itemHeight: integer - height of items.
-_space: integer - space between items.
-_alignmentY: integer - Y-axis alignment of items label - *Note, see xbfont.h
-
-Note:
-    After you create the control, you need to add it to the window with addControl().
-
-Example:
-    self.cList = xbmcgui.ControlList(100, 250, 200, 250, 'font14', space=5)
-</pre> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a73876d9451a6e62841c753520948d076"></a>
+Creates a list of items.
+</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a9782bc679b7a221cc5cedb4a3985b9be"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def xbmcgui.ControlList.__new__ </td>
+          <td class="memname">def xbmcgui.ControlList.__init__ </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>cls</em>, </td>
+          <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -328,9 +306,32 @@ Example:
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">x: integer - x coordinate of control.
+y: integer - y coordinate of control.
+width: integer - width of control.
+height: integer - height of control.
+font: string - font used for items label. (e.g. 'font13')
+textColor: hexstring - color of items label. (e.g. '0xFFFFFFFF')
+buttonTexture: string - filename for no focus texture.
+buttonFocusTexture: string - filename for focus texture.
+selectedColor: integer - x offset of label.
+_imageWidth: integer - width of items icon or thumbnail.
+_imageHeight: integer - height of items icon or thumbnail.
+_itemTextXOffset: integer - x offset of items label.
+_itemTextYOffset: integer - y offset of items label.
+_itemHeight: integer - height of items.
+_space: integer - space between items.
+_alignmentY: integer - Y-axis alignment of items label - *Note, see xbfont.h
 
+Note:
+    After you create the control, you need to add it to the window with addControl().
+
+Example:
+    self.cList = xbmcgui.ControlList(100, 250, 200, 250, 'font14', space=5)
+</pre> 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="afe4124361b05da8599196bc289441a15"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1594,7 +1595,7 @@ example:
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 27 2013 09:10:34 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 2 2013 22:09:16 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

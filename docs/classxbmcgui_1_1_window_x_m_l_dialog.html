@@ -108,10 +108,8 @@ Inheritance diagram for xbmcgui.WindowXMLDialog:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aae74116e95e1901d96f557c31f47e183"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_window_x_m_l_dialog.html#aae74116e95e1901d96f557c31f47e183">__new__</a></td></tr>
-<tr class="separator:aae74116e95e1901d96f557c31f47e183"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa839770d27556d3ddb845b1499c269b5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_window.html#aa839770d27556d3ddb845b1499c269b5">__new__</a></td></tr>
-<tr class="separator:aa839770d27556d3ddb845b1499c269b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca3a2f45b17c3ffb3c11a1124e664be"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_window_x_m_l_dialog.html#a2ca3a2f45b17c3ffb3c11a1124e664be">__init__</a></td></tr>
+<tr class="separator:a2ca3a2f45b17c3ffb3c11a1124e664be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af038857dfc61c96bc4822cc93eb4eb79"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_window_x_m_l.html#af038857dfc61c96bc4822cc93eb4eb79">removeItem</a></td></tr>
 <tr class="separator:af038857dfc61c96bc4822cc93eb4eb79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28241287a854e799b10e4ed6dc48ce3c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_window_x_m_l.html#a28241287a854e799b10e4ed6dc48ce3c">addItem</a></td></tr>
@@ -180,64 +178,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a96bde2709c7558866d45c180ac671130"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">Create a new WindowXMLDialog script.
-
-xmlFilename: string - the name of the xml file to look for.
-scriptPath: string - path to script. used to fallback to if the xml doesn't exist in the current skin. (eg os.getcwd())
-defaultSkin: string - name of the folder in the skins path to look in for the xml.
-defaultRes: string - default skins resolution.
-
-Note:
-    Skin folder structure is eg(resources/skins/Default/720p).
-
-Example:
-    ui = GUI('script-Lyrics-main.xml', os.getcwd(), 'LCARS', 'PAL')
-    ui.doModal()
-    del ui
-</pre> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aa839770d27556d3ddb845b1499c269b5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">def xbmcgui.Window.__new__ </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>cls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>windowId</em> = <code>-1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aae74116e95e1901d96f557c31f47e183"></a>
+<div class="textblock"><pre class="fragment">Create a new WindowXMLDialog script.</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a2ca3a2f45b17c3ffb3c11a1124e664be"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def xbmcgui.WindowXMLDialog.__new__ </td>
+          <td class="memname">def xbmcgui.WindowXMLDialog.__init__ </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>cls</em>, </td>
+          <td class="paramname"><em>self</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -270,9 +220,22 @@ Example:
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">xmlFilename: string - the name of the xml file to look for.
+scriptPath: string - path to script. used to fallback to if the xml doesn't exist in the current skin. (eg os.getcwd())
+defaultSkin: string - name of the folder in the skins path to look in for the xml.
+defaultRes: string - default skins resolution.
 
+Note:
+Skin folder structure is eg(resources/skins/Default/720p).
+
+Example:
+ui = GUI('script-Lyrics-main.xml', os.getcwd(), 'LCARS', 'PAL')
+ui.doModal()
+del ui
+</pre> 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a397018638b2e9ec65da211920a1eaa61"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1449,7 +1412,7 @@ Note:
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 27 2013 09:10:34 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 2 2013 22:09:15 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
