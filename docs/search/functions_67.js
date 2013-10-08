@@ -28,9 +28,9 @@ var searchData=
   ['getspace',['getSpace',['../classxbmcgui_1_1_control_list.html#ae0541e1bd2342aa1733cdc6b1811f86a',1,'xbmcgui::ControlList']]],
   ['getspincontrol',['getSpinControl',['../classxbmcgui_1_1_control_list.html#aeffee470bf29fc1f7ed78561799fdc46',1,'xbmcgui::ControlList']]],
   ['gettext',['getText',['../classxbmcgui_1_1_control_edit.html#a341d8c2236f09a67e6f18177fc913dd8',1,'xbmcgui::ControlEdit']]],
-  ['gettitle',['getTitle',['../classaddonwindow_1_1___addon_window.html#ada4bd535543c83ffce72b21863688d4b',1,'addonwindow::_AddonWindow']]],
   ['getwidth',['getWidth',['../classxbmcgui_1_1_window.html#af7ae4a47ee3061f91e800dac85ce358e',1,'xbmcgui.Window.getWidth()'],['../classxbmcgui_1_1_control.html#a128e168bd85b51b137bf0ff51d2b867a',1,'xbmcgui.Control.getWidth()']]],
   ['getwindowheight',['getWindowHeight',['../classaddonwindow_1_1___abstract_window.html#abb61e20282d7cdbc03b155dd5d60b8d1',1,'addonwindow::_AbstractWindow']]],
+  ['getwindowtitle',['getWindowTitle',['../classaddonwindow_1_1___addon_window.html#a0f5c5c4a3e2d04edd9d150129a1f6243',1,'addonwindow::_AddonWindow']]],
   ['getwindowwidth',['getWindowWidth',['../classaddonwindow_1_1___abstract_window.html#a3264444abeb92e96c7354e803def2374',1,'addonwindow::_AbstractWindow']]],
   ['getx',['getX',['../classaddonwindow_1_1___abstract_window.html#a88abde869726f1cf4fb858ce79b3a7b7',1,'addonwindow._AbstractWindow.getX()'],['../classxbmcgui_1_1_control.html#ab6de3cc36c12c3ccc80645aa4421c1ae',1,'xbmcgui.Control.getX()']]],
   ['gety',['getY',['../classaddonwindow_1_1___abstract_window.html#a59a175bec66a07f9efa2d7c7cac31c5d',1,'addonwindow._AbstractWindow.getY()'],['../classxbmcgui_1_1_control.html#ae77a1668041f93ea3d35acd8d68da0ec',1,'xbmcgui.Control.getY()']]]

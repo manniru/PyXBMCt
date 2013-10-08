@@ -108,6 +108,8 @@ Inheritance diagram for xbmcgui.ListItem:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9bb5c46cb2a799f1d58294d4a92393ac"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_list_item.html#a9bb5c46cb2a799f1d58294d4a92393ac">__init__</a></td></tr>
 <tr class="separator:a9bb5c46cb2a799f1d58294d4a92393ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ffb0ef208817017528ea96852fb6b1c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_list_item.html#a5ffb0ef208817017528ea96852fb6b1c">addStreamInfo</a></td></tr>
+<tr class="separator:a5ffb0ef208817017528ea96852fb6b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad392bf7b2a2f6fcb3e54d3d0a62bb086"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_list_item.html#ad392bf7b2a2f6fcb3e54d3d0a62bb086">getLabel</a></td></tr>
 <tr class="separator:ad392bf7b2a2f6fcb3e54d3d0a62bb086"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aa41722d2b298ac324bb9a7e3496402"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxbmcgui_1_1_list_item.html#a6aa41722d2b298ac324bb9a7e3496402">getLabel2</a></td></tr>
@@ -236,6 +238,54 @@ List of functions: http://wiki.xbmc.org/?title=List_of_Built_In_Functions
 
 Example:
     listitem.addContextMenuItems([('Theater Showtimes', 'XBMC.RunScript(special://home/scripts/showtimes/default.py,Iron Man)')])
+</pre> 
+</div>
+</div>
+<a class="anchor" id="a5ffb0ef208817017528ea96852fb6b1c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def xbmcgui.ListItem.addStreamInfo </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">addStreamInfo(type, values) -- Add a stream with details.
+
+type              : string - type of stream(video/audio/subtitle).
+values            : dictionary - pairs of { label: value }.
+
+Video Values:
+codec         : string (h264)
+aspect        : float (1.78)
+width         : integer (1280)
+height        : integer (720)
+duration      : integer (seconds)
+
+Audio Values:
+codec         : string (dts)
+language      : string (en)
+channels      : integer (2)
+
+Subtitle Values:
+language      : string (en)
+
+example:
+- self.list.getSelectedItem().addStreamInfo('video', { 'Codec': 'h264', 'Width' : 1280 })
 </pre> 
 </div>
 </div>
@@ -559,9 +609,12 @@ label2: string or unicode - text string.
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Sets the listitem's path.
+<pre class="fragment">setPath(path) -- Sets the listitem's path.
+path           : string or unicode - path, activated when item is clicked.
+*Note, You can use the above as keywords for arguments.
 
-path: string or unicode - path, activated when item is clicked.
+example:
+- self.list.getSelectedItem().setPath(path='ActivateWindow(Weather)')
 </pre> 
 </div>
 </div>
@@ -647,7 +700,7 @@ thumb: string or unicode - image filename.
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 3 2013 00:40:33 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 8 2013 20:50:53 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -2,6 +2,9 @@ var searchData=
 [
   ['action',['Action',['../classxbmcgui_1_1_action.html',1,'xbmcgui']]],
   ['action_5fmouse_5fdrag',['ACTION_MOUSE_DRAG',['../namespaceaddonwindow.html#a9842aa265ee688c8778b9b5c2c24586f',1,'addonwindow']]],
+  ['action_5fmouse_5fmove',['ACTION_MOUSE_MOVE',['../namespaceaddonwindow.html#adcc9745edf16661b61ed0e3e8a5a7c00',1,'addonwindow']]],
+  ['action_5fmouse_5fwheel_5fdown',['ACTION_MOUSE_WHEEL_DOWN',['../namespaceaddonwindow.html#a7db1d7d02b353bf7befde2963f5e360c',1,'addonwindow']]],
+  ['action_5fmouse_5fwheel_5fup',['ACTION_MOUSE_WHEEL_UP',['../namespaceaddonwindow.html#a3b24502a0c441b708f9031587913a233',1,'addonwindow']]],
   ['action_5fmove_5fdown',['ACTION_MOVE_DOWN',['../namespaceaddonwindow.html#a02fa0c21ff768159b31047c342862654',1,'addonwindow']]],
   ['action_5fmove_5fleft',['ACTION_MOVE_LEFT',['../namespaceaddonwindow.html#a5f63f071d9a1a89a20f452d3b1236d2e',1,'addonwindow']]],
   ['action_5fmove_5fright',['ACTION_MOVE_RIGHT',['../namespaceaddonwindow.html#ac4bfb31b804f192a067774ce59b3bdcb',1,'addonwindow']]],
@@ -20,6 +23,7 @@ var searchData=
   ['addonwindow',['addonwindow',['../namespaceaddonwindow.html',1,'']]],
   ['addonwindow_2epy',['addonwindow.py',['../addonwindow_8py.html',1,'']]],
   ['addonwindowerror',['AddonWindowError',['../classaddonwindow_1_1_addon_window_error.html',1,'addonwindow']]],
+  ['addstreaminfo',['addStreamInfo',['../classxbmcgui_1_1_list_item.html#a5ffb0ef208817017528ea96852fb6b1c',1,'xbmcgui::ListItem']]],
   ['align_5fcenter',['ALIGN_CENTER',['../namespaceaddonwindow.html#a616b122e1ff40a0b3d1aec483bbd0efb',1,'addonwindow']]],
   ['align_5fcenter_5fx',['ALIGN_CENTER_X',['../namespaceaddonwindow.html#a45d17cfee24c3270327fc8b18acad474',1,'addonwindow']]],
   ['align_5fcenter_5fy',['ALIGN_CENTER_Y',['../namespaceaddonwindow.html#a7d154ec8eee2c10415b43c4c3dfc6216',1,'addonwindow']]],

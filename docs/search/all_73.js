@@ -36,10 +36,10 @@ var searchData=
   ['setstaticcontent',['setStaticContent',['../classxbmcgui_1_1_control_list.html#aa778bc1241d42798f10da13b94548a9e',1,'xbmcgui::ControlList']]],
   ['settext',['setText',['../classxbmcgui_1_1_control_text_box.html#ac6d776645f2669cc8cbdf1ecc390eb0b',1,'xbmcgui.ControlTextBox.setText()'],['../classxbmcgui_1_1_control_edit.html#a28a63e662845d9a0f537fb27e113de46',1,'xbmcgui.ControlEdit.setText()']]],
   ['setthumbnailimage',['setThumbnailImage',['../classxbmcgui_1_1_list_item.html#a9411df0c6479bf80abb8531491fc0be6',1,'xbmcgui::ListItem']]],
-  ['settitle',['setTitle',['../classaddonwindow_1_1___addon_window.html#ac7c26b16f8c9d04a0d1736e32de1c675',1,'addonwindow::_AddonWindow']]],
   ['setvisible',['setVisible',['../classxbmcgui_1_1_control.html#af18f5e6dda71aca7dede9f5490aa24ae',1,'xbmcgui::Control']]],
   ['setvisiblecondition',['setVisibleCondition',['../classxbmcgui_1_1_control.html#a5c99152fe8e4af96023427088c75bb56',1,'xbmcgui::Control']]],
   ['setwidth',['setWidth',['../classxbmcgui_1_1_control.html#ab4644aab0a99936e5fdbac7fd6422d1b',1,'xbmcgui::Control']]],
+  ['setwindowtitle',['setWindowTitle',['../classaddonwindow_1_1___addon_window.html#a33b06dc15e80d518b814bf656149b375',1,'addonwindow::_AddonWindow']]],
   ['show',['show',['../classxbmcgui_1_1_window.html#a11d8d25eb2566209f04dc2bea1f8c1d9',1,'xbmcgui::Window']]],
   ['size',['size',['../classxbmcgui_1_1_control_list.html#adc74440f9a135b5ca4e3f507e0a537a9',1,'xbmcgui::ControlList']]],
   ['slider',['Slider',['../classaddonwindow_1_1_slider.html',1,'addonwindow']]]
