@@ -9,7 +9,6 @@ var searchData=
   ['_5f_5fversion_5f_5f',['__version__',['../namespacexbmcgui.html#a2f2319a0768951a5a6e96c1cc1d8cfd6',1,'xbmcgui']]],
   ['_5fabstractwindow',['_AbstractWindow',['../classaddonwindow_1_1___abstract_window.html',1,'addonwindow']]],
   ['_5faddon',['_addon',['../namespaceaddonwindow.html#a7dfb5c3db69221cc864fd4b8be26c11a',1,'addonwindow']]],
-  ['_5faddon_5fname',['_ADDON_NAME',['../namespaceaddonwindow.html#a6ea5b1501318443d3b96d67cd2688082',1,'addonwindow']]],
   ['_5faddon_5fpath',['_addon_path',['../namespaceaddonwindow.html#aa67a2de5fff3c4394a0495e8e7e3bf53',1,'addonwindow']]],
   ['_5faddonwindow',['_AddonWindow',['../classaddonwindow_1_1___addon_window.html',1,'addonwindow']]],
   ['_5fdialogwindow',['_DialogWindow',['../classaddonwindow_1_1___dialog_window.html',1,'addonwindow']]],

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">PyXBMCt
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
    <div id="projectbrief">PyXBMCt is a framework which simplifies creating UI for XBMC addons.</div>
   </td>
@@ -203,6 +203,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a26bc3af8475b0dee30c59b043efdd1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7123f7679a457dfe54adbdae408e25b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___abstract_window.html#af7123f7679a457dfe54adbdae408e25b">executeConnected</a></td></tr>
 <tr class="separator:af7123f7679a457dfe54adbdae408e25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bebf50be5f29ef904d7dd099cc49d90"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___abstract_window.html#a3bebf50be5f29ef904d7dd099cc49d90">setAnimation</a></td></tr>
+<tr class="separator:a3bebf50be5f29ef904d7dd099cc49d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -228,6 +230,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a7a6e978ef353e2411d2538d6e9816590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e4c08929507be5434c4e6823e1fece1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___addon_window.html#a6e4c08929507be5434c4e6823e1fece1">title_bar</a></td></tr>
 <tr class="separator:a6e4c08929507be5434c4e6823e1fece1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac17faef5c46554741f502714b83806b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___addon_window.html#ac17faef5c46554741f502714b83806b5">window_close_button</a></td></tr>
+<tr class="separator:ac17faef5c46554741f502714b83806b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a515c314bb9727706e4f4beadaabe19fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___addon_window.html#a515c314bb9727706e4f4beadaabe19fb">win_padding</a></td></tr>
 <tr class="separator:a515c314bb9727706e4f4beadaabe19fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad05ef47bcb403db2998b0450c5a08e9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaddonwindow_1_1___addon_window.html#ad05ef47bcb403db2998b0450c5a08e9d">grid_x</a></td></tr>
@@ -1506,6 +1510,51 @@ This will not delete the control. It is only removed from the window.
 
 </div>
 </div>
+<a class="anchor" id="a3bebf50be5f29ef904d7dd099cc49d90"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">def addonwindow._AbstractWindow.setAnimation </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>control</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">This method is called to set animation properties for all controls
+added to the current addon window instance - both built-in controls
+(window background, title bar etc.) and controls added with placeControl().
+It receives a control instance as the 2nd positional argument (besides self).
+By default the method does nohing, i.e. no animation is set for controls.
+To add animation you need to re-implement this menthod in your child class.
+
+E.g:
+def setAnimation(self, control):
+    control.setAnimations([('WindowOpen', 'effect=fade start=0 end=100 time=1000',),
+                    ('WindowClose', 'effect=fade start=100 end=0 time=1000',)])
+</pre> 
+</div>
+</div>
 <a class="anchor" id="afeb3a1be8a39028a60280b164bae7331"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2364,6 +2413,26 @@ Note:
 
 </div>
 </div>
+<a class="anchor" id="ac17faef5c46554741f502714b83806b5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">addonwindow._AddonWindow.window_close_button</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="adb8746c89fb16d10d0c56f5740561009"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2470,7 +2539,7 @@ Note:
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 8 2013 20:50:53 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 17 2013 17:31:40 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

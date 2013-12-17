@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">PyXBMCt
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
    <div id="projectbrief">PyXBMCt is a framework which simplifies creating UI for XBMC addons.</div>
   </td>
@@ -134,13 +134,11 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a6ea5b1501318443d3b96d67cd2688082"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceaddonwindow.html#a6ea5b1501318443d3b96d67cd2688082">_ADDON_NAME</a> = 'script.module.pyxbmct'</td></tr>
-<tr class="separator:a6ea5b1501318443d3b96d67cd2688082"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dfb5c3db69221cc864fd4b8be26c11a"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceaddonwindow.html#a7dfb5c3db69221cc864fd4b8be26c11a">_addon</a> = xbmcaddon.Addon(id=<a class="el" href="namespaceaddonwindow.html#a6ea5b1501318443d3b96d67cd2688082">_ADDON_NAME</a>)</td></tr>
+<tr class="memitem:a7dfb5c3db69221cc864fd4b8be26c11a"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceaddonwindow.html#a7dfb5c3db69221cc864fd4b8be26c11a">_addon</a> = xbmcaddon.Addon()</td></tr>
 <tr class="separator:a7dfb5c3db69221cc864fd4b8be26c11a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa67a2de5fff3c4394a0495e8e7e3bf53"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceaddonwindow.html#aa67a2de5fff3c4394a0495e8e7e3bf53">_addon_path</a> = _addon.getAddonInfo('path')</td></tr>
 <tr class="separator:aa67a2de5fff3c4394a0495e8e7e3bf53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a795701844a931ef08641bf82a8596b00"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceaddonwindow.html#a795701844a931ef08641bf82a8596b00">_images</a> = os.path.join(<a class="el" href="namespaceaddonwindow.html#aa67a2de5fff3c4394a0495e8e7e3bf53">_addon_path</a>, 'lib', 'pyxbmct', 'textures', 'default')</td></tr>
+<tr class="memitem:a795701844a931ef08641bf82a8596b00"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceaddonwindow.html#a795701844a931ef08641bf82a8596b00">_images</a> = os.path.join(<a class="el" href="namespaceaddonwindow.html#aa67a2de5fff3c4394a0495e8e7e3bf53">_addon_path</a>, 'pyxbmct', 'textures', 'default')</td></tr>
 <tr class="separator:a795701844a931ef08641bf82a8596b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27cdd3d722a1e17472056e9989c8ed04"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceaddonwindow.html#a27cdd3d722a1e17472056e9989c8ed04">ALIGN_LEFT</a> = 0</td></tr>
 <tr class="separator:a27cdd3d722a1e17472056e9989c8ed04"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,19 +193,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">tuple addonwindow._addon = xbmcaddon.Addon(id=<a class="el" href="namespaceaddonwindow.html#a6ea5b1501318443d3b96d67cd2688082">_ADDON_NAME</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6ea5b1501318443d3b96d67cd2688082"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string addonwindow._ADDON_NAME = 'script.module.pyxbmct'</td>
+          <td class="memname">tuple addonwindow._addon = xbmcaddon.Addon()</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -231,7 +217,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">tuple addonwindow._images = os.path.join(<a class="el" href="namespaceaddonwindow.html#aa67a2de5fff3c4394a0495e8e7e3bf53">_addon_path</a>, 'lib', 'pyxbmct', 'textures', 'default')</td>
+          <td class="memname">tuple addonwindow._images = os.path.join(<a class="el" href="namespaceaddonwindow.html#aa67a2de5fff3c4394a0495e8e7e3bf53">_addon_path</a>, 'pyxbmct', 'textures', 'default')</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -465,7 +451,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 8 2013 20:50:52 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 17 2013 17:31:40 for PyXBMCt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

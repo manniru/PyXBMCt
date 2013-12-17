@@ -3,6 +3,7 @@ var searchData=
   ['scroll',['scroll',['../classxbmcgui_1_1_control_text_box.html#a3eb752c9a7823d9aeb0fef0539e52f1e',1,'xbmcgui::ControlTextBox']]],
   ['select',['select',['../classxbmcgui_1_1_list_item.html#af0fece22d980cf4be2642bb88c0b020f',1,'xbmcgui.ListItem.select()'],['../classxbmcgui_1_1_dialog.html#a89416caaff4742d62d022c76d0b19ec3',1,'xbmcgui.Dialog.select()']]],
   ['selectitem',['selectItem',['../classxbmcgui_1_1_control_list.html#a5d96a8d81d47dc72e9f8edc7a83d1e0d',1,'xbmcgui::ControlList']]],
+  ['setanimation',['setAnimation',['../classaddonwindow_1_1___abstract_window.html#a3bebf50be5f29ef904d7dd099cc49d90',1,'addonwindow::_AbstractWindow']]],
   ['setanimations',['setAnimations',['../classxbmcgui_1_1_control.html#a8415345c5c3d1ebba330999e92190005',1,'xbmcgui::Control']]],
   ['setbackground',['setBackground',['../classaddonwindow_1_1_addon_full_window.html#afeb3a1be8a39028a60280b164bae7331',1,'addonwindow::AddonFullWindow']]],
   ['setcolordiffuse',['setColorDiffuse',['../classxbmcgui_1_1_control_image.html#a931d68aeb119b85e185f0b2a30fc8146',1,'xbmcgui::ControlImage']]],
